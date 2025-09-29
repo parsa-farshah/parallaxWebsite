@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>caeli</title>
+    <link rel="stylesheet" href="src/style/output.css" />
+  </head>
+  <body>
+    <main class="w-full h-[1000vh] relative">
+      <!-------------------------------------- navbar top -------------------------->
+      <section
+        class="w-[93%] mx-auto h-[66px] md:h-[50px] md:mt-4 mt-2 flex items-center justify-between"
+      >
+        <!-- left side in md -->
+        <div
+          class="w-full flex h-full items-center justify-between md:border md:border-[#dfdfdfd3] md:w-[85%] bg-[#faf7f0] rounded-md"
+        >
+          <!-- left side -->
+          <div
+            class="w-[78%] md:w-[20%] h-full rounded-md bg-[#faf7f0] border border-[#dfdfdfd3] flex items-center justify-between px-4 md:border-0"
+          >
+            <figure class="w-[160px] h-[40px]">
+              <img
+                class="w-full h-full object-contain"
+                src="src/images/logo.svg"
+                alt=""
+              />
+            </figure>
+            <span class="favText text-xl md:hidden">Menu</span>
+          </div>
+          <!-- middle side -->
+          <div class="hidden lg:flex w-[55%] md:justify-between">
+            <ul
+              class="group w-full favText flex justify-between *:favText *:text-sm *:lg:text-[16px] *:text-[#053725]"
+            >
+              <li
+                class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+              >
+                Caeli One
+              </li>
+              <li
+                class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+              >
+                Caeli Revolution
+              </li>
+              <li
+                class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+              >
+                Project Simulation
+              </li>
+              <li
+                class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+              >
+                Pro Q&A
+              </li>
+              <li
+                class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+              >
+                Join Us
+              </li>
+            </ul>
+          </div>
+          <!-- right side -->
+          <div
+            id="frBtn"
+            class="w-[20%] md:w-[10%] cursor-pointer h-full flex items-center justify-center gap-3 rounded-md bg-[#faf7f0] border border-[#dfdfdfd3] relative md:border-0"
+          >
+            <span class="favText text-xl">En</span>
+            <figure id="arrowBottom" class="w-[10px] h-[10px] duration-500">
+              <img
+                class="w-full h-full"
+                src="src/images/arrow bottom.svg"
+                alt=""
+              />
+            </figure>
+            <div
+              id="En"
+              class="absolute top-[120%] bg w-full h-0 overflow-hidden rounded-md bg-[#faf7f0] border-0 duration-500 rotate-0 border-[#dfdfdfd3] flex justify-center items-center"
+            >
+              <span class="favText text-xl">Fr</span>
+            </div>
+          </div>
+        </div>
+        <!----------------------------- right side in md --------------------->
+        <div
+          class="w-full hidden md:flex h-full items-center bg-[#053725] justify-center gap-3 hover:border hover:border-[#dfdfdfd3] md:w-[14%] rounded-md hover:bg-[#faf7f0] duration-500 group/item"
+        >
+          <span
+            class="favWhite flex text-[10px] lg:text-[16px] capitalize group-hover/item:text-[#053725]"
+            >contact us</span
+          >
+          <div
+            class="w-[30px] h-[30px] flex justify-center items-center overflow-hidden relative"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="size-3 group-hover/item:translate-x-20 duration-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#053725"
+              class="size-3 duration-500 absolute -translate-x-20 group-hover/item:translate-x-0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="w-[110%] h-[100vh] bg-amber-800 absolute -top-4 left-0 pointer-events-none -z-10"></div> -->
+    </main>
+  </body>
+  <script src="src/js/master.js"></script>
+</html>

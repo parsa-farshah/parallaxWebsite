@@ -1,0 +1,19 @@
+@import "tailwindcss";
+/* npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --watch */
+@font-face {
+  font-family: altformBold;
+  src: url(../fonts/AltformTRIAL-Bold.otf);
+}
+body {
+  background-color: #faf7f0;
+}
+@layer utilities {
+  .favText {
+    color: #053725;
+    font-family: altformBold;
+  }
+  .favWhite {
+    color: #ffffff;
+    font-family: altformBold;
+  }
+}
