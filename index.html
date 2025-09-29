@@ -11,7 +11,8 @@
       <section id="secScroll" class="w-[100%] h-[900vh] relative">
         <!-------------------------------------- navbar top -------------------------->
         <div
-          class="w-[93%] h-[66px] md:h-[50px] md:mt-4 mt-2 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 2xl:container z-30"
+          id="navbar"
+          class="w-[93%] h-[66px] md:h-[50px] md:mt-4 mt-2 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 2xl:container z-30 duration-500"
         >
           <!-- left side in md -->
           <div
@@ -126,15 +127,18 @@
           </div>
         </div>
         <!---------------------- mouse ----------------------------->
-        <div class="w-full fixed z-20 pointer-events-none">
+        <div
+          class="w-full fixed z-20 pointer-events-none duration-500 perspective-midrange transform-3d"
+        >
           <figure
-            class="w-[400px] h-[300px] relative top-[292px] md:top-[330px] left-1/2 -translate-x-1/2"
+            id="mouse"
+            class="w-[400px] h-[300px] relative top-[292px] md:top-[330px] left-1/2 -translate-x-1/2 perspective-midrange transform-3d duration-500"
           >
             <img src="src/images/mouse.webp" alt="" />
             <!----------- circle with --------------->
             <div
               id="textOnMouse"
-              class="absolute top-[80px] left-1/2 -translate-x-1/2 flex items-center gap-4 group/arrow cursor-pointer opacity-100"
+              class="absolute top-[80px] left-1/2 -translate-x-1/2 flex items-center gap-4 group/arrow cursor-pointer opacity-100 duration-300"
             >
               <span class="favTextLighter text-lg">Find out More</span>
               <div
@@ -159,13 +163,14 @@
           class="fixed left-1/2 -translate-1/2 top-[250px] z-10 pointer-events-none"
         >
           <h6
+            id="textUnderMouse"
             class="uppercase text-center text-7xl md:text-[110px] favTextLighter font-black"
           >
             Cooler future
           </h6>
           <div
             id="shadowText"
-            class="w-[330px] h-[470px] absolute left-1/2 -translate-x-1/2 -top-[80px] bgShadow rotate-90 z-10 opacity-50 hidden"
+            class="w-[330px] h-[470px] absolute left-1/2 -translate-x-1/2 -top-[80px] bgShadow rotate-90 z-10 opacity-50 hidden duration-300"
           ></div>
         </div>
       </section>
