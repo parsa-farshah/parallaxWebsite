@@ -12,8 +12,16 @@ body {
     color: #053725;
     font-family: altformBold;
   }
+  .favTextLighter {
+    color: #005d3b;
+    font-family: altformBold;
+  }
   .favWhite {
     color: #ffffff;
     font-family: altformBold;
+  }
+  .bgShadow {
+    background: #faf7f0;
+    background: linear-gradient(17deg, #faf7f0 42%, rgba(241, 237, 229, 0) 91%);
   }
 }
