@@ -20,6 +20,9 @@ let textOnMouse = document.querySelector("#textOnMouse");
 let navbar = document.querySelector("#navbar");
 let textUnderMouse = document.querySelector("#textUnderMouse");
 let mouse = document.querySelector("#mouse");
+let _plantImg = document.querySelector("#plantImg");
+let _consoleImg = document.querySelector("#consoleImg");
+let _shelfImg = document.querySelector("#shelfImg");
 secScroll.addEventListener("scroll", () => {
   let st = parseInt(secScroll.scrollTop);
   if (st > vhSite / 10) {
@@ -29,8 +32,8 @@ secScroll.addEventListener("scroll", () => {
     textOnMouse.classList.remove("opacity-100");
     textOnMouse.classList.add("opacity-40");
   } else {
-    shadowText.classList.add("hidden");
     shadowText.classList.remove("flex");
+    shadowText.classList.add("hidden");
     // for text on mouse
     textOnMouse.classList.remove("opacity-40");
     textOnMouse.classList.add("opacity-100");
@@ -56,6 +59,8 @@ secScroll.addEventListener("scroll", () => {
   }
   if (st > vhSite) {
     textUnderMouse.classList.add("hidden");
+    // shadow on text
+    shadowText.classList.add("hidden");
 
     // for text on mouse
     textOnMouse.classList.add("hidden");
@@ -64,6 +69,9 @@ secScroll.addEventListener("scroll", () => {
     textUnderMouse.classList.add("flex");
     shadowText.classList.add("opacity-80");
     shadowText.classList.remove("opacity-100");
+    // shadow on text
+    shadowText.classList.remove("hidden");
+    shadowText.classList.add("flex");
     // shadow text
     shadowText.classList.add("opacity-50");
     shadowText.classList.remove("opacity-80");
@@ -88,5 +96,78 @@ secScroll.addEventListener("scroll", () => {
   } else {
     mouse.classList.remove("translate-z-[-1100px]");
     mouse.classList.remove("translate-y-[-200px]");
+  }
+  if (st > vhSite * 3) {
+    mouse.classList.add("translate-z-[-1500px]");
+    // plant image
+    _plantImg.classList.remove("left-[-200px]");
+    _plantImg.classList.add("left-[-150px]");
+    // console image
+    _consoleImg.classList.remove("top-[100%]");
+    _consoleImg.classList.add("top-[70%]");
+    // shelf
+    _shelfImg.classList.remove("left-[125%]");
+    _shelfImg.classList.add("left-[110%]");
+  } else {
+    mouse.classList.remove("translate-z-[-1500px]");
+    // plant image
+    _plantImg.classList.remove("left-[-150px]");
+    _plantImg.classList.add("left-[-200px]");
+    // console image
+    _consoleImg.classList.remove("top-[70%]");
+    _consoleImg.classList.add("top-[100%]");
+    // shelf
+    _shelfImg.classList.remove("left-[110%]");
+    _shelfImg.classList.add("left-[125%]");
+  }
+  if (st > vhSite * 3.25) {
+    // plant image
+    _plantImg.classList.remove("left-[-150px]");
+    _plantImg.classList.add("left-[-40px]");
+    _plantImg.classList.add("bottom-[40px]");
+    // console image
+    _consoleImg.classList.remove("top-[70%]");
+    _consoleImg.classList.add("top-[65%]");
+    // shelf
+    _shelfImg.classList.remove("left-[110%]");
+    _shelfImg.classList.add("left-[105%]");
+  } else {
+    // plant image
+    _plantImg.classList.remove("left-[-40px]");
+    _plantImg.classList.remove("bottom-[40px]");
+    _plantImg.classList.add("left-[-150px]");
+
+    // console image
+    _consoleImg.classList.remove("top-[65%]");
+    _consoleImg.classList.add("top-[70%]");
+    // shelf
+    _shelfImg.classList.remove("left-[105%]");
+    _shelfImg.classList.add("left-[110%]");
+  }
+  if (st > vhSite * 3.5) {
+    // plant image
+    _plantImg.classList.remove("left-[-40px]");
+    _plantImg.classList.add("left-[-30px]");
+    _plantImg.classList.remove("bottom-[40px]");
+    _plantImg.classList.add("bottom-[80px]");
+    // console image
+    _consoleImg.classList.remove("top-[65%]");
+    _consoleImg.classList.add("top-[62%]");
+    // shelf
+    _shelfImg.classList.remove("left-[105%]");
+    _shelfImg.classList.add("left-[95%]");
+  } else {
+    // plant image
+    _plantImg.classList.remove("bottom-[80px]");
+    _plantImg.classList.remove("left-[-30px]");
+    _plantImg.classList.add("left-[-40px]");
+    _plantImg.classList.add("bottom-[40px]");
+
+    // console image
+    _consoleImg.classList.remove("top-[62%]");
+    _consoleImg.classList.add("top-[65%]");
+    // shelf
+    _shelfImg.classList.remove("left-[95%]");
+    _shelfImg.classList.add("left-[105%]");
   }
 });
