@@ -128,21 +128,27 @@
         </div>
         <!---------------------- mouse ----------------------------->
         <div
-          class="w-full fixed z-20 pointer-events-none duration-500 perspective-midrange transform-3d"
+          class="w-full fixed z-20 duration-500 perspective-midrange transform-3d pointer-events-none"
         >
           <figure
             id="mouse"
-            class="w-[400px] h-[300px] relative top-[292px] md:top-[330px] left-1/2 -translate-x-1/2 perspective-midrange transform-3d duration-500"
+            class="w-[80%] sm:w-[30%] h-[300px] relative top-[292px] md:top-[330px] left-1/2 -translate-x-1/2 perspective-midrange transform-3d duration-500"
           >
-            <img src="src/images/mouse.webp" alt="" />
+            <img
+              class="pointer-events-none"
+              src="src/images/mouse.webp"
+              alt=""
+            />
             <!----------- circle with --------------->
             <div
               id="textOnMouse"
-              class="absolute top-[80px] left-1/2 -translate-x-1/2 flex items-center gap-4 group/arrow cursor-pointer opacity-100 duration-300"
+              class="absolute w-[200px] flex justify-center top-16 sm:top-[80px] left-1/2 -translate-x-1/2 items-center gap-4 group/arrow cursor-pointer opacity-100 duration-300"
             >
-              <span class="favTextLighter text-lg">Find out More</span>
+              <span class="favTextLighter text-[16px] sm:text-lg"
+                >Find out More</span
+              >
               <div
-                class="w-[30px] h-[50px] border border-[#003b085d] rounded-xl flex items-center justify-center overflow-hidden relative"
+                class="w-[20px] h-[30px] sm:w-[30px] sm:h-[50px] border border-[#003b085d] rounded-xl flex items-center justify-center overflow-hidden relative"
               >
                 <img
                   class="rotate-90 absolute w-[20px] h-[20px] group-hover/arrow:translate-y-10 duration-500"
@@ -164,7 +170,7 @@
         >
           <h6
             id="textUnderMouse"
-            class="uppercase text-center text-7xl md:text-[110px] favTextLighter font-black"
+            class="uppercase text-center text-6xl sm:text-7xl md:text-[110px] favTextLighter font-black"
           >
             Cooler future
           </h6>
@@ -176,7 +182,7 @@
         <!--------------------------- plant --------------------------------->
         <figure
           id="plantImg"
-          class="w-[200px] h-[400px] fixed bottom-0 left-[-200px] pointer-events-none duration-500"
+          class="w-[200px] h-[400px] fixed bottom-0 hidden sm:block left-[-200px] pointer-events-none duration-500"
         >
           <img src="src/images/plant.webp" alt="" />
         </figure>
@@ -190,7 +196,7 @@
         <!------------------------------------- shelf ----------------------------->
         <figure
           id="shelfImg"
-          class="w-[700px] h-[500px] fixed top-[60%] left-[125%] -translate-y-1/2 -translate-x-1/2 pointer-events-none duration-500"
+          class="w-[700px] h-[500px] hidden sm:block fixed top-[60%] left-[150%] -translate-y-1/2 -translate-x-1/2 pointer-events-none duration-500"
         >
           <img src="src/images/shelf.webp" alt="" />
         </figure>

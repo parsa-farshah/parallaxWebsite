@@ -106,7 +106,7 @@ secScroll.addEventListener("scroll", () => {
     _consoleImg.classList.remove("top-[100%]");
     _consoleImg.classList.add("top-[70%]");
     // shelf
-    _shelfImg.classList.remove("left-[125%]");
+    _shelfImg.classList.remove("left-[150%]");
     _shelfImg.classList.add("left-[110%]");
   } else {
     mouse.classList.remove("translate-z-[-1500px]");
@@ -118,7 +118,7 @@ secScroll.addEventListener("scroll", () => {
     _consoleImg.classList.add("top-[100%]");
     // shelf
     _shelfImg.classList.remove("left-[110%]");
-    _shelfImg.classList.add("left-[125%]");
+    _shelfImg.classList.add("left-[150%]");
   }
   if (st > vhSite * 3.25) {
     // plant image
