@@ -38,6 +38,8 @@ const Manufacturing = document.querySelector("#Manufacturing");
 const locally = document.querySelector("#locally");
 const professionals = document.querySelector("#professionals");
 const proImg = document.querySelector("#proImg");
+const ourImg = document.querySelector("#ourImg");
+const condImg = document.querySelector("#condImg");
 secScroll.addEventListener("scroll", () => {
   let st = parseInt(secScroll.scrollTop);
   if (st > vhSite / 10) {
@@ -433,7 +435,7 @@ secScroll.addEventListener("scroll", () => {
     proImg.classList.add("translate-y-[-14%]");
   } else {
     professionals.classList.remove("top-[-10%]");
-    professionals.classList.add("top-[0%]");
+    // professionals.classList.add("top-[0%]");
     proImg.classList.remove("translate-y-[-14%]");
   }
   if (st > vhSite * 10.75) {
@@ -443,6 +445,110 @@ secScroll.addEventListener("scroll", () => {
   } else {
     professionals.classList.remove("top-[-20%]");
     proImg.classList.remove("translate-y-[-16%]");
-    professionals.classList.add("top-[-10%]");
+    // professionals.classList.add("top-[-10%]");
+  }
+  if (st > vhSite * 11) {
+    professionals.classList.remove("top-[-20%]");
+    proImg.classList.remove("translate-y-[-16%]");
+    professionals.classList.add("top-[-25%]");
+    proImg.classList.add("translate-y-[-18%]");
+  } else {
+    professionals.classList.remove("top-[-25%]");
+    proImg.classList.remove("translate-y-[-18%]");
+    // professionals.classList.add("top-[-20%]");
+    proImg.classList.add("translate-y-[-16%]");
+  }
+  if (st > vhSite * 11.25) {
+    professionals.classList.remove("top-[-25%]");
+    proImg.classList.remove("translate-y-[-18%]");
+    professionals.classList.add("top-[-30%]");
+    proImg.classList.add("translate-y-[-20%]");
+  } else {
+    professionals.classList.remove("top-[-30%]");
+    proImg.classList.remove("translate-y-[-20%]");
+    // professionals.classList.add("top-[-25%]");
+    proImg.classList.add("translate-y-[-18%]");
+  }
+  if (st > vhSite * 11.5) {
+    professionals.classList.remove("top-[-30%]");
+    proImg.classList.remove("translate-y-[-20%]");
+    professionals.classList.add("top-[-50%]");
+    proImg.classList.add("translate-y-[-22%]");
+    ourImg.classList.add("translate-y-[-5%]");
+  } else {
+    professionals.classList.remove("top-[-50%]");
+    proImg.classList.remove("translate-y-[-22%]");
+    // professionals.classList.add("top-[-30%]");
+    proImg.classList.add("translate-y-[-20%]");
+    ourImg.classList.remove("translate-y-[-5%]");
+  }
+  if (st > vhSite * 11.75) {
+    professionals.classList.remove("top-[-50%]");
+    proImg.classList.remove("translate-y-[-22%]");
+    professionals.classList.add("top-[-70%]");
+    proImg.classList.add("translate-y-[-24%]");
+    ourImg.classList.add("translate-y-[-9%]");
+  } else {
+    professionals.classList.remove("top-[-70%]");
+    proImg.classList.remove("translate-y-[-24%]");
+    // professionals.classList.add("top-[-50%]");
+    proImg.classList.add("translate-y-[-22%]");
+    ourImg.classList.remove("translate-y-[-9%]");
+  }
+  if (st > vhSite * 11.75) {
+    professionals.classList.remove("top-[-70%]");
+    proImg.classList.remove("translate-y-[-24%]");
+    professionals.classList.add("top-[-90%]");
+    proImg.classList.add("translate-y-[-27%]");
+    ourImg.classList.add("translate-y-[-11%]");
+  } else {
+    professionals.classList.remove("top-[-90%]");
+    proImg.classList.remove("translate-y-[-27%]");
+    // professionals.classList.add("top-[-70%]");
+    proImg.classList.add("translate-y-[-24%]");
+    ourImg.classList.remove("translate-y-[-11%]");
+  }
+  if (st > vhSite * 12) {
+    professionals.classList.remove("top-[-90%]");
+    professionals.classList.add("top-[-110%]");
+    ourImg.classList.remove("translate-y-[-11%]");
+    ourImg.classList.add("translate-y-[-13%]");
+    condImg.classList.add("translate-y-[-3%]");
+  } else {
+    professionals.classList.remove("top-[-110%]");
+    condImg.classList.remove("translate-y-[-3%]");
+    ourImg.classList.remove("translate-y-[-13%]");
+    // professionals.classList.add("top-[-90%]");
+    ourImg.classList.add("translate-y-[-11%]");
+  }
+  if (st > vhSite * 12.25) {
+    // professionals.classList.remove("top-[-110%]");
+    // ourImg.classList.remove("translate-y-[-13%]");
+    // condImg.classList.remove("translate-y-[-3%]");
+    professionals.classList.add("top-[-130%]");
+    ourImg.classList.add("translate-y-[-15%]");
+    condImg.classList.add("translate-y-[-5%]");
+  } else {
+    professionals.classList.remove("top-[-130%]");
+    ourImg.classList.remove("translate-y-[-15%]");
+    condImg.classList.remove("translate-y-[-5%]");
+    // professionals.classList.add("top-[-110%]");
+    ourImg.classList.add("translate-y-[-13%]");
+    condImg.classList.add("translate-y-[-3%]");
+  }
+  if (st > vhSite * 12.5) {
+    // professionals.classList.remove("top-[-130%]");
+    // ourImg.classList.remove("translate-y-[-15%]");
+    // condImg.classList.remove("translate-y-[-5%]");
+    professionals.classList.add("top-[-160%]");
+    ourImg.classList.add("translate-y-[-17%]");
+    condImg.classList.add("translate-y-[-7%]");
+  } else {
+    professionals.classList.remove("top-[-160%]");
+    ourImg.classList.remove("translate-y-[-17%]");
+    condImg.classList.remove("translate-y-[-7%]");
+    // professionals.classList.add("top-[-130%]");
+    ourImg.classList.add("translate-y-[-15%]");
+    condImg.classList.add("translate-y-[-5%]");
   }
 });
