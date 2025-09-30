@@ -291,11 +291,14 @@
         <!------------------------------ Professionals -------------------------->
         <div
           id="professionals"
-          class="h-[200vh] my-20 fixed top-[100%] pointer-events-none duration-500"
+          class="h-[100vh] my-20 fixed top-[100%] duration-500 pointer-events-none"
         >
+          <!----------------------------------- professional --------------------->
           <div class="flex flex-col sm:flex-row justify-between">
             <!-- left side -->
-            <div class="w-[95%] sm:w-[40%] flex justify-center mt-0 sm:mt-80">
+            <div
+              class="w-[95%] sm:w-[40%] flex justify-center mt-0 sm:mt-[270px]"
+            >
               <ul
                 class="flex flex-col gap-4 w-[75%] h-fit *:text-4xl *:favTextLighter"
               >
@@ -311,8 +314,87 @@
               </ul>
             </div>
             <!-- right side -->
-            <figure class="w-[95%] ml-[1.7%] mt-10 sm:mt-0 sm:mx-0 sm:w-[60%] mr-0 sm:mr-5 rounded-2xl overflow-hidden">
-              <img class="rounded-2xl" src="src/images/img1.jpg" alt="" />
+            <figure
+              class="w-[95%] ml-[1.7%] mt-10 sm:mt-0 sm:mx-0 sm:w-[60%] mr-0 sm:mr-5 rounded-2xl overflow-hidden"
+            >
+              <img
+                id="proImg"
+                class="rounded-2xl w-[120%] h-[120%] object-cover duration-700 pointer-events-none"
+                src="src/images/img1.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <!------------------- Our product -------------------------->
+          <div
+            class="flex w-full h-fit flex-col-reverse sm:flex-row justify-between mt-5 sm:mt-[170px] px-0 sm:px-20"
+          >
+            <!-- left side -->
+            <figure
+              class="w-[95%] sm:w-[60%] ml-[1.7%] mt-10 sm:mt-0 sm:mx-0 mr-0 sm:mr-5 rounded-2xl overflow-hidden"
+            >
+              <img
+                id="ourImg"
+                class="rounded-2xl w-[120%] h-[120%] object-cover duration-700"
+                src="src/images/img1.jpg"
+                alt=""
+              />
+            </figure>
+
+            <!-- right side -->
+            <div
+              class="w-[95%] sm:w-[40%] flex flex-col gap-5 mx-0 sm:mx-20 mt-5 px-5 sm:px-0"
+            >
+              <p class="w-[80%] altformBold text-[17px] text-[#6c8c81]">
+                Our product delivers a performance coefficient (COP/EER) of 16.
+                For every watt consumed, our coolers produce 16 watts of cooling
+                power. That’s 5 times more efficient than conventional air
+                conditioners.
+              </p>
+              <a
+                class="w-[50px] h-[50px] border rounded-md border-[#6c8c81] relative overflow-hidden group hover:bg-[#002e1d] duration-500 pointer-events-auto"
+                href=""
+              >
+                <img
+                  class="w-[15px] h-[15px] absolute top-1/2 left-1/2 -translate-1/2 group-hover:left-[150%] duration-500"
+                  src="src/images/arrow right green.png"
+                  alt=""
+                />
+                <img
+                  class="w-[15px] h-[15px] absolute top-1/2 -left-1/2 -translate-1/2 group-hover:left-[50%] duration-500"
+                  src="src/images/arrow right.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <!--------------------------- conditioning system ---------------------->
+          <div
+            class="flex w-full h-fit flex-col-reverse sm:flex-row justify-between mt-5 sm:mt-[170px] px-0 sm:px-20"
+          >
+            <!-- left side -->
+            <div
+              class="w-[95%] sm:w-[40%] flex justify-center items-center gap-5 mx-0 sm:mx-20 mt-5 px-5 sm:px-0"
+            >
+              <p class="w-[80%] altformBold text-[17px] text-[#6c8c81]">
+                By choosing French manufacturing and using recycled materials,
+                the design is optimized, allowing our solution to minimize its
+                environmental impact. Electricity consumption is also reduced by
+                80% compared to a conventional air conditioning system.
+              </p>
+            </div>
+
+            <!-- right side -->
+
+            <figure
+              class="w-[95%] sm:w-[60%] ml-[1.7%] mt-10 sm:mt-0 sm:mx-0 mr-0 sm:mr-5 rounded-2xl overflow-hidden"
+            >
+              <img
+                id="condImg"
+                class="rounded-2xl w-[120%] h-[120%] object-cover duration-700"
+                src="src/images/img1.jpg"
+                alt=""
+              />
             </figure>
           </div>
         </div>
