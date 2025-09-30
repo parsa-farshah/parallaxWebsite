@@ -33,6 +33,9 @@ const afterTextSec = document.querySelector("#afterTextSec");
 const bgWhite = document.querySelector("#bgWhite");
 const ourMision = document.querySelector("#ourMision");
 const mouseDiv = document.querySelector("#mouseDiv");
+const shadowGreen = document.querySelector("#shadowGreen");
+const Manufacturing = document.querySelector("#Manufacturing");
+const locally = document.querySelector("#locally");
 secScroll.addEventListener("scroll", () => {
   let st = parseInt(secScroll.scrollTop);
   if (st > vhSite / 10) {
@@ -279,6 +282,10 @@ secScroll.addEventListener("scroll", () => {
     bgWhitePers.classList.add("translate-z-[-50px]");
     text1BgWhite.classList.add("hidden");
     text2BgWhite.classList.add("hidden");
+    // line white
+    lineWhiteLeft.classList.add("hidden");
+    lineWhiteRight.classList.add("hidden");
+    //
     afterTextSec.classList.remove("md:hidden");
     afterTextSec.classList.add("md:flex");
     // images back remove
@@ -313,19 +320,62 @@ secScroll.addEventListener("scroll", () => {
     bgWhite.classList.remove("top-1/2");
     bgWhite.classList.add("top-[10%]");
     mouseDiv.classList.add("translate-y-[-80%]");
+    ourMision.classList.remove("top-[100%]");
+    ourMision.classList.add("top-[60%]");
   } else {
     bgWhite.classList.remove("top-[10%]");
     bgWhite.classList.add("top-1/2");
     mouseDiv.classList.remove("translate-y-[-80%]");
+    ourMision.classList.remove("top-[60%]");
+    ourMision.classList.add("top-[100%]");
   }
   if (st > vhSite * 7.5) {
     mouseDiv.classList.remove("translate-y-[-80%]");
     mouseDiv.classList.add("translate-y-[-160%]");
     bgWhite.classList.remove("top-[10%]");
     bgWhite.classList.add("top-[-60%]");
+    ourMision.classList.remove("top-[60%]");
+    ourMision.classList.add("top-[0%]");
   } else {
     mouseDiv.classList.remove("translate-y-[-160%]");
     bgWhite.classList.remove("top-[-60%]");
     // bgWhite.classList.add("top-[10%]");
+    ourMision.classList.remove("top-[0%]");
+    ourMision.classList.add("top-[60%]");
+  }
+  if (st > vhSite * 7.75) {
+    shadowGreen.classList.remove("left-[-240%]");
+    shadowGreen.classList.add("left-[0%]");
+    // shadowGreen.classList.add("left-[20%]");
+  } else {
+    // shadowGreen.classList.remove("left-[20%]");
+    shadowGreen.classList.remove("left-[0%]");
+    shadowGreen.classList.add("left-[-240%]");
+  }
+  if (st > vhSite * 8) {
+    shadowGreen.classList.remove("left-[0%]");
+    shadowGreen.classList.add("left-[50%]");
+  } else {
+    shadowGreen.classList.remove("left-[50%]");
+    shadowGreen.classList.add("left-[0%]");
+  }
+  if (st > vhSite * 8.5) {
+    shadowGreen.classList.remove("left-[50%]");
+    shadowGreen.classList.add("left-[120%]");
+  } else {
+    shadowGreen.classList.remove("left-[120%]");
+    shadowGreen.classList.add("left-[50%]");
+  }
+  if (st > vhSite * 9) {
+    Manufacturing.classList.add("hidden");
+    locally.classList.remove("hidden");
+    locally.classList.add("block");
+    shadowGreen.classList.add("hidden");
+  } else {
+    shadowGreen.classList.remove("hidden");
+    Manufacturing.classList.remove("hidden");
+    Manufacturing.classList.add("block");
+    locally.classList.remove("block");
+    locally.classList.add("hidden");
   }
 });

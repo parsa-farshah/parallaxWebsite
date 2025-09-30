@@ -127,7 +127,8 @@
           </div>
         </div>
         <!---------------------- mouse ----------------------------->
-        <div id="mouseDiv"
+        <div
+          id="mouseDiv"
           class="w-full fixed z-50 duration-500 perspective-midrange transform-3d pointer-events-none"
         >
           <figure
@@ -264,8 +265,29 @@
         <!-- our mision -->
         <div
           id="ourMision"
-          class="w-full h-[100vh] bg-[#002e1d] hidden absolute top-[50px] left-0 pointer-events-none"
-        ></div>
+          class="w-full h-[100vh] bg-[#002e1d] fixed top-[100%] left-0 pointer-events-none duration-500 flex flex-col justify-center items-center"
+        >
+          <span
+            class="altformBold text-white text-lg absolute top-[30%] uppercase -translate-y-1/2"
+            >Our mission</span
+          >
+          <p
+            id="Manufacturing"
+            class="altformBold text-white text-8xl text-center duration-500 absolute top-[53%] -translate-y-1/2"
+          >
+            Manufacturing sustainable cooling solutions ...
+          </p>
+          <p
+            id="locally"
+            class="altformBold text-white text-8xl text-center hidden duration-500 uppercase"
+          >
+            ... locally
+          </p>
+          <div
+            id="shadowGreen"
+            class="shadowGreen w-[400%] h-[280px] absolute top-[60%] -translate-y-1/2 left-[-240%] -translate-x-1/2 duration-500"
+          ></div>
+        </div>
       </section>
     </main>
   </body>
