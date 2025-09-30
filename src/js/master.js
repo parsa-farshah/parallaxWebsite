@@ -37,6 +37,7 @@ const shadowGreen = document.querySelector("#shadowGreen");
 const Manufacturing = document.querySelector("#Manufacturing");
 const locally = document.querySelector("#locally");
 const professionals = document.querySelector("#professionals");
+const proImg = document.querySelector("#proImg");
 secScroll.addEventListener("scroll", () => {
   let st = parseInt(secScroll.scrollTop);
   if (st > vhSite / 10) {
@@ -395,29 +396,53 @@ secScroll.addEventListener("scroll", () => {
     ourMision.classList.add("translate-y-[-40%]");
     professionals.classList.remove("top-[100%]");
     professionals.classList.add("top-[70%]");
+    proImg.classList.add("translate-y-[-3%]");
   } else {
     ourMision.classList.remove("translate-y-[-40%]");
     professionals.classList.add("top-[100%]");
     professionals.classList.remove("top-[70%]");
+    proImg.classList.remove("translate-y-[-3%]");
   }
   if (st > vhSite * 10) {
     ourMision.classList.remove("translate-y-[-40%]");
     ourMision.classList.add("translate-y-[-80%]");
     professionals.classList.remove("top-[70%]");
     professionals.classList.add("top-[40%]");
+    proImg.classList.add("translate-y-[-6%]");
   } else {
     ourMision.classList.remove("translate-y-[-80%]");
     professionals.classList.add("top-[70%]");
     professionals.classList.remove("top-[40%]");
+    proImg.classList.remove("translate-y-[-6%]");
   }
   if (st > vhSite * 10.25) {
     ourMision.classList.remove("translate-y-[-80%]");
     ourMision.classList.add("translate-y-[-100%]");
     professionals.classList.remove("top-[40%]");
     professionals.classList.add("top-[0%]");
+    proImg.classList.add("translate-y-[-9%]");
   } else {
     ourMision.classList.remove("translate-y-[-100%]");
     professionals.classList.remove("top-[0%]");
     professionals.classList.add("top-[40%]");
+    proImg.classList.remove("translate-y-[-9%]");
+  }
+  if (st > vhSite * 10.5) {
+    professionals.classList.remove("top-[0%]");
+    professionals.classList.add("top-[-10%]");
+    proImg.classList.add("translate-y-[-14%]");
+  } else {
+    professionals.classList.remove("top-[-10%]");
+    professionals.classList.add("top-[0%]");
+    proImg.classList.remove("translate-y-[-14%]");
+  }
+  if (st > vhSite * 10.75) {
+    professionals.classList.remove("top-[-10%]");
+    professionals.classList.add("top-[-20%]");
+    proImg.classList.add("translate-y-[-16%]");
+  } else {
+    professionals.classList.remove("top-[-20%]");
+    proImg.classList.remove("translate-y-[-16%]");
+    professionals.classList.add("top-[-10%]");
   }
 });
