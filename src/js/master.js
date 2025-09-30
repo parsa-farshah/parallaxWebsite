@@ -201,14 +201,22 @@ secScroll.addEventListener("scroll", () => {
   if (st > vhSite * 4.25) {
     bgWhitePers.classList.remove("translate-z-[-1000px]");
     bgWhitePers.classList.add("translate-z-[-200px]");
-    bgShadowOnCaeli.classList.remove("hidden");
     // text1
     text1BgWhite.classList.remove("hidden");
     text1BgWhite.classList.add("block");
+    // text1
+    text1BgWhite.classList.add("opacity-20");
+    text1BgWhite.classList.remove("opacity-60");
+    // text2
+    text2BgWhite.classList.add("opacity-20");
+    text2BgWhite.classList.remove("opacity-60");
+
     // text2
     text2BgWhite.classList.remove("hidden");
     text2BgWhite.classList.add("block");
   } else {
+    text2BgWhite.classList.remove("opacity-20");
+    text1BgWhite.classList.remove("opacity-20");
     text1BgWhite.classList.add("hidden");
     text2BgWhite.classList.add("hidden");
     bgWhitePers.classList.remove("translate-z-[-200px]");
@@ -217,74 +225,50 @@ secScroll.addEventListener("scroll", () => {
   if (st > vhSite * 4.5) {
     bgWhitePers.classList.remove("translate-z-[-200px]");
     bgWhitePers.classList.add("translate-z-[-50px]");
-    bgShadowOnCaeli.classList.remove("opacity-85");
-    bgShadowOnCaeli.classList.add("opacity-75");
+    text1BgWhite.classList.remove("opacity-20");
+    text2BgWhite.classList.remove("opacity-20");
+    text1BgWhite.classList.add("opacity-60");
+    text2BgWhite.classList.add("opacity-60");
   } else {
     bgWhitePers.classList.remove("translate-z-[-50px]");
     bgWhitePers.classList.add("translate-z-[-200px]");
-    bgShadowOnCaeli.classList.remove("opacity-75");
-    bgShadowOnCaeli.classList.add("opacity-85");
+    text1BgWhite.classList.remove("opacity-60");
+    text2BgWhite.classList.remove("opacity-60");
+    text1BgWhite.classList.add("opacity-20");
+    text2BgWhite.classList.add("opacity-20");
   }
-  if (st > vhSite * 4.75) {
-    bgShadowOnCaeli.classList.remove("opacity-75");
-    bgShadowOnCaeli.classList.add("opacity-35");
+  if (st > vhSite * 5.5) {
+    bgWhitePers.classList.add("translate-z-[-50px]");
+    text1BgWhite.classList.remove("opacity-60");
+    text2BgWhite.classList.remove("opacity-60");
   } else {
-    bgShadowOnCaeli.classList.remove("opacity-35");
-    bgShadowOnCaeli.classList.add("opacity-75");
   }
-  if (st > vhSite * 5) {
-    bgShadowOnCaeli.classList.remove("opacity-35");
-    bgShadowOnCaeli.classList.add("opacity-5");
-    bgShadowOnCaeli.classList.add("hidden");
-    
+  if (st > vhSite * 6) {
+    bgWhitePers.classList.add("translate-z-[-50px]");
+    text1BgWhite.classList.add("opacity-70");
+    text2BgWhite.classList.add("opacity-70");
   } else {
-    bgShadowOnCaeli.classList.remove("opacity-5");
-    bgShadowOnCaeli.classList.add("opacity-35");
-    bgShadowOnCaeli.classList.remove("hidden");
+    text1BgWhite.classList.remove("opacity-70");
+    text2BgWhite.classList.remove("opacity-70");
   }
-  // if (st > vhSite * 5.25) {
-  //   // text1
-  //   text1BgWhite.classList.remove("opacity-95");
-  //   text1BgWhite.classList.add("opacity-70");
-  //   // text2
-  //   text2BgWhite.classList.remove("opacity-95");
-  //   text2BgWhite.classList.add("opacity-70");
-  // } else {
-  //   // text1
-  //   text1BgWhite.classList.remove("opacity-70");
-  //   text1BgWhite.classList.add("opacity-95");
-  //   // text2
-  //   text2BgWhite.classList.remove("opacity-70");
-  //   text2BgWhite.classList.add("opacity-95");
-  // }
-  // if (st > vhSite * 5.5) {
-  //   // text1
-  //   text1BgWhite.classList.remove("opacity-70");
-  //   text1BgWhite.classList.add("opacity-40");
-  //   // text2
-  //   text2BgWhite.classList.remove("opacity-70");
-  //   text2BgWhite.classList.add("opacity-40");
-  // } else {
-  //   // text1
-  //   text1BgWhite.classList.remove("opacity-40");
-  //   text1BgWhite.classList.add("opacity-70");
-  //   // text2
-  //   text2BgWhite.classList.remove("opacity-40");
-  //   text1BgWhite.classList.add("opacity-70");
-  // }
-  // if (st > vhSite * 5.75) {
-  //   // text1
-  //   text1BgWhite.classList.remove("opacity-40");
-  //   text1BgWhite.classList.add("opacity-10");
-  //   // text2
-  //   text2BgWhite.classList.remove("opacity-40");
-  //   text2BgWhite.classList.add("opacity-10");
-  // } else {
-  //   // text1
-  //   text1BgWhite.classList.remove("opacity-10");
-  //   text1BgWhite.classList.add("opacity-40");
-  //   // text2
-  //   text2BgWhite.classList.remove("opacity-10");
-  //   text2BgWhite.classList.add("opacity-40");
-  // }
+  if (st > vhSite * 6.5) {
+    bgWhitePers.classList.add("translate-z-[-50px]");
+    text1BgWhite.classList.remove("opacity-70");
+    text2BgWhite.classList.remove("opacity-70");
+    text1BgWhite.classList.add("opacity-40");
+    text2BgWhite.classList.add("opacity-40");
+  } else {
+    text1BgWhite.classList.remove("opacity-40");
+    text2BgWhite.classList.remove("opacity-40");
+  }
+  if (st > vhSite * 6.75) {
+    bgWhitePers.classList.add("translate-z-[-50px]");
+    text1BgWhite.classList.remove("opacity-40");
+    text2BgWhite.classList.remove("opacity-40");
+    text1BgWhite.classList.add("opacity-10");
+    text2BgWhite.classList.add("opacity-10");
+  } else {
+    text1BgWhite.classList.remove("opacity-10");
+    text2BgWhite.classList.remove("opacity-10");
+  }
 });

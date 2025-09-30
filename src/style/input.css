@@ -24,4 +24,8 @@ body {
     background: #faf7f0;
     background: linear-gradient(17deg, #faf7f0 42%, rgba(241, 237, 229, 0) 91%);
   }
+  .bgShadowWhite {
+    background: #ffffff;
+    background: linear-gradient(17deg, #ffffff 42%, rgba(241, 237, 229, 0) 91%);
+  }
 }
