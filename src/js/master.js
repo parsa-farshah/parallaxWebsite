@@ -36,6 +36,7 @@ const mouseDiv = document.querySelector("#mouseDiv");
 const shadowGreen = document.querySelector("#shadowGreen");
 const Manufacturing = document.querySelector("#Manufacturing");
 const locally = document.querySelector("#locally");
+const professionals = document.querySelector("#professionals");
 secScroll.addEventListener("scroll", () => {
   let st = parseInt(secScroll.scrollTop);
   if (st > vhSite / 10) {
@@ -377,5 +378,46 @@ secScroll.addEventListener("scroll", () => {
     Manufacturing.classList.add("block");
     locally.classList.remove("block");
     locally.classList.add("hidden");
+  }
+  if (st > vhSite * 9.25) {
+    ourMision.classList.add("translate-y-[-10%]");
+  } else {
+    ourMision.classList.remove("translate-y-[-10%]");
+  }
+  if (st > vhSite * 9.5) {
+    ourMision.classList.remove("translate-y-[-10%]");
+    ourMision.classList.add("translate-y-[-20%]");
+  } else {
+    ourMision.classList.remove("translate-y-[-20%]");
+  }
+  if (st > vhSite * 9.75) {
+    ourMision.classList.remove("translate-y-[-20%]");
+    ourMision.classList.add("translate-y-[-40%]");
+    professionals.classList.remove("top-[100%]");
+    professionals.classList.add("top-[70%]");
+  } else {
+    ourMision.classList.remove("translate-y-[-40%]");
+    professionals.classList.add("top-[100%]");
+    professionals.classList.remove("top-[70%]");
+  }
+  if (st > vhSite * 10) {
+    ourMision.classList.remove("translate-y-[-40%]");
+    ourMision.classList.add("translate-y-[-80%]");
+    professionals.classList.remove("top-[70%]");
+    professionals.classList.add("top-[40%]");
+  } else {
+    ourMision.classList.remove("translate-y-[-80%]");
+    professionals.classList.add("top-[70%]");
+    professionals.classList.remove("top-[40%]");
+  }
+  if (st > vhSite * 10.25) {
+    ourMision.classList.remove("translate-y-[-80%]");
+    ourMision.classList.add("translate-y-[-100%]");
+    professionals.classList.remove("top-[40%]");
+    professionals.classList.add("top-[0%]");
+  } else {
+    ourMision.classList.remove("translate-y-[-100%]");
+    professionals.classList.remove("top-[0%]");
+    professionals.classList.add("top-[40%]");
   }
 });
