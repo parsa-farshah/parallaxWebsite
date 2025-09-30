@@ -30,6 +30,9 @@ const text1BgWhite = document.querySelector("#text1BgWhite");
 const text2BgWhite = document.querySelector("#text2BgWhite");
 const bgShadowOnCaeli = document.querySelector("#bgShadowOnCaeli");
 const afterTextSec = document.querySelector("#afterTextSec");
+const bgWhite = document.querySelector("#bgWhite");
+const ourMision = document.querySelector("#ourMision");
+const mouseDiv = document.querySelector("#mouseDiv");
 secScroll.addEventListener("scroll", () => {
   let st = parseInt(secScroll.scrollTop);
   if (st > vhSite / 10) {
@@ -305,5 +308,24 @@ secScroll.addEventListener("scroll", () => {
     // _consoleImg.classList.add("top-[65%]");
     _plantImg.classList.add("left-[-40px]");
     _plantImg.classList.add("bottom-[40px]");
+  }
+  if (st > vhSite * 7.25) {
+    bgWhite.classList.remove("top-1/2");
+    bgWhite.classList.add("top-[10%]");
+    mouseDiv.classList.add("translate-y-[-80%]");
+  } else {
+    bgWhite.classList.remove("top-[10%]");
+    bgWhite.classList.add("top-1/2");
+    mouseDiv.classList.remove("translate-y-[-80%]");
+  }
+  if (st > vhSite * 7.5) {
+    mouseDiv.classList.remove("translate-y-[-80%]");
+    mouseDiv.classList.add("translate-y-[-160%]");
+    bgWhite.classList.remove("top-[10%]");
+    bgWhite.classList.add("top-[-60%]");
+  } else {
+    mouseDiv.classList.remove("translate-y-[-160%]");
+    bgWhite.classList.remove("top-[-60%]");
+    // bgWhite.classList.add("top-[10%]");
   }
 });

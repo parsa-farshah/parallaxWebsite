@@ -127,12 +127,12 @@
           </div>
         </div>
         <!---------------------- mouse ----------------------------->
-        <div
+        <div id="mouseDiv"
           class="w-full fixed z-50 duration-500 perspective-midrange transform-3d pointer-events-none"
         >
           <figure
             id="mouse"
-            class="w-[80%] sm:w-[30%] h-[300px] relative top-[292px] md:top-[330px] left-1/2 -translate-x-1/2 perspective-midrange transform-3d duration-500"
+            class="w-[80%] sm:w-[30%] h-[300px] relative top-[292px] md:top-[330px] left-1/2 -translate-x-1/2 perspective-midrange transform-3d duration-300"
           >
             <img
               class="pointer-events-none"
@@ -216,7 +216,8 @@
         </figure>
         <!----------------------------------- bg white ------------------------------->
         <div
-          class="w-full h-full fixed left-[52%] top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none transform-3d perspective-midrange z-40 overflow-hidden"
+          id="bgWhite"
+          class="w-full h-[100vh] fixed left-[52%] top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none transform-3d perspective-midrange z-40 overflow-hidden duration-500"
         >
           <div
             id="bgWhitePers"
@@ -235,11 +236,15 @@
             <!----------------- add new bg section after hide text ----------------->
             <div
               id="afterTextSec"
-              class="hidden w-full h-full absolute top-0 left-0 md:hidden justify-between rounded-4xl duration-500"
+              class="hidden w-full h-full absolute top-0 left-0 md:hidden justify-between rounded-4xl duration-500 pointer-events-none"
             >
-              <div class="w-1/2 h-full flex flex-col items-center justify-center">
-                <span class="favText text-6xl w-[60%] uppercase text-center">unmatched efficiency</span>
-                <p class="favText text-xl text-green-600 mt-5 w-[60%] text-center">
+              <div
+                class="w-1/2 h-full flex flex-col items-center justify-center"
+              >
+                <span class="favText text-6xl w-[60%] uppercase text-center"
+                  >unmatched efficiency</span
+                >
+                <p class="favText text-xl mt-5 w-[60%] text-center">
                   Our product delivers a performance coefficient (COP/EER) of
                   16. For every watt consumed, our coolers produce 16 watts of
                   cooling power. That’s 5 times more efficient than conventional
@@ -256,6 +261,11 @@
             </div>
           </div>
         </div>
+        <!-- our mision -->
+        <div
+          id="ourMision"
+          class="w-full h-[100vh] bg-[#002e1d] hidden absolute top-[50px] left-0 pointer-events-none"
+        ></div>
       </section>
     </main>
   </body>
