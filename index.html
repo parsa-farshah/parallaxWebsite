@@ -8,7 +8,7 @@
   </head>
   <body class="w-full overflow-y-hidden overflow-x-hidden">
     <main id="main" class="w-[103%] md:w-[101%] h-[100vh] overflow-y-scroll">
-      <section id="secScroll" class="w-[100%] h-[900vh] relative">
+      <section id="secScroll" class="w-[100%] h-[6000vh] relative">
         <!-------------------------------------- navbar top -------------------------->
         <div
           id="navbar"
@@ -128,7 +128,7 @@
         </div>
         <!---------------------- mouse ----------------------------->
         <div
-          class="w-full fixed z-20 duration-500 perspective-midrange transform-3d pointer-events-none"
+          class="w-full fixed z-50 duration-500 perspective-midrange transform-3d pointer-events-none"
         >
           <figure
             id="mouse"
@@ -182,7 +182,7 @@
         <!--------------------------- plant --------------------------------->
         <figure
           id="plantImg"
-          class="w-[200px] h-[400px] fixed bottom-0 hidden sm:block left-[-200px] pointer-events-none duration-500"
+          class="w-[200px] h-[400px] fixed bottom-0 hidden sm:block left-[-200px] pointer-events-none duration-500 z-40"
         >
           <img src="src/images/plant.webp" alt="" />
         </figure>
@@ -196,10 +196,48 @@
         <!------------------------------------- shelf ----------------------------->
         <figure
           id="shelfImg"
-          class="w-[700px] h-[500px] hidden sm:block fixed top-[60%] left-[150%] -translate-y-1/2 -translate-x-1/2 pointer-events-none duration-500"
+          class="w-[700px] h-[500px] hidden sm:block fixed top-[60%] left-[150%] -translate-y-1/2 -translate-x-1/2 pointer-events-none duration-500 z-40"
         >
           <img src="src/images/shelf.webp" alt="" />
         </figure>
+        <!-- bg white line right -->
+        <figure
+          id="lineWhiteLeft"
+          class="w-full h-fit fixed hidden pointer-events-none right-0 top-[55%] -translate-y-1/2 translate-x-1/2 z-10"
+        >
+          <img src="src/images/download (3).svg" alt="" />
+        </figure>
+        <!-- bg white line left -->
+        <figure
+          id="lineWhiteRight"
+          class="w-full h-fit fixed hidden pointer-events-none left-[50%] top-[30%] -translate-y-1/2 -translate-x-1/2 z-10"
+        >
+          <img src="src/images/download (4).svg" alt="" />
+        </figure>
+        <!-- bg white -->
+        <div
+          class="w-full h-full fixed left-[52%] top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none transform-3d perspective-midrange z-40"
+        >
+          <div
+            id="bgWhitePers"
+            class="w-[95%] h-[95%] bg-white translate-z-[-800000px] rounded-4xl duration-1000 flex flex-col items-center py-10 relative overflow-hidden"
+          >
+            <span
+              id="text1BgWhite"
+              class="favText text-lg uppercase font-extralight hidden duration-300 opacity-5"
+              >Find Out More</span
+            >
+            <span
+              id="text2BgWhite"
+              class="favTextLighter mt-5 w-[60%] text-center leading-60 text-[240px] uppercase hidden duration-300 opacity-5"
+              >Caeli On</span
+            >
+            <div
+              id="bgShadowOnCaeli"
+              class="absolute bgShadow w-full h-full hidden pointer-events-none"
+            ></div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
