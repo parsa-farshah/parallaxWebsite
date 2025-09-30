@@ -23,6 +23,12 @@ let mouse = document.querySelector("#mouse");
 let _plantImg = document.querySelector("#plantImg");
 let _consoleImg = document.querySelector("#consoleImg");
 let _shelfImg = document.querySelector("#shelfImg");
+const lineWhiteLeft = document.querySelector("#lineWhiteLeft");
+const lineWhiteRight = document.querySelector("#lineWhiteRight");
+const bgWhitePers = document.querySelector("#bgWhitePers");
+const text1BgWhite = document.querySelector("#text1BgWhite");
+const text2BgWhite = document.querySelector("#text2BgWhite");
+const bgShadowOnCaeli = document.querySelector("#bgShadowOnCaeli");
 secScroll.addEventListener("scroll", () => {
   let st = parseInt(secScroll.scrollTop);
   if (st > vhSite / 10) {
@@ -156,6 +162,10 @@ secScroll.addEventListener("scroll", () => {
     // shelf
     _shelfImg.classList.remove("left-[105%]");
     _shelfImg.classList.add("left-[95%]");
+    // line white
+    lineWhiteLeft.classList.remove("hidden");
+    // line white right
+    lineWhiteRight.classList.remove("hidden");
   } else {
     // plant image
     _plantImg.classList.remove("bottom-[80px]");
@@ -169,5 +179,112 @@ secScroll.addEventListener("scroll", () => {
     // shelf
     _shelfImg.classList.remove("left-[95%]");
     _shelfImg.classList.add("left-[105%]");
+    // line white
+    lineWhiteLeft.classList.add("hidden");
+    // line white right
+    lineWhiteRight.classList.add("hidden");
   }
+  if (st > vhSite * 3.75) {
+    bgWhitePers.classList.remove("translate-z-[-800000px]");
+    bgWhitePers.classList.add("translate-z-[-2000px]");
+  } else {
+    bgWhitePers.classList.remove("translate-z-[-2000px]");
+    bgWhitePers.classList.add("translate-z-[-800000px]");
+  }
+  if (st > vhSite * 4) {
+    bgWhitePers.classList.remove("translate-z-[-2000px]");
+    bgWhitePers.classList.add("translate-z-[-1000px]");
+  } else {
+    bgWhitePers.classList.remove("translate-z-[-1000px]");
+    bgWhitePers.classList.add("translate-z-[-2000px]");
+  }
+  if (st > vhSite * 4.25) {
+    bgWhitePers.classList.remove("translate-z-[-1000px]");
+    bgWhitePers.classList.add("translate-z-[-200px]");
+    bgShadowOnCaeli.classList.remove("hidden");
+    // text1
+    text1BgWhite.classList.remove("hidden");
+    text1BgWhite.classList.add("block");
+    // text2
+    text2BgWhite.classList.remove("hidden");
+    text2BgWhite.classList.add("block");
+  } else {
+    text1BgWhite.classList.add("hidden");
+    text2BgWhite.classList.add("hidden");
+    bgWhitePers.classList.remove("translate-z-[-200px]");
+    bgWhitePers.classList.add("translate-z-[-1000px]");
+  }
+  if (st > vhSite * 4.5) {
+    bgWhitePers.classList.remove("translate-z-[-200px]");
+    bgWhitePers.classList.add("translate-z-[-50px]");
+    bgShadowOnCaeli.classList.remove("opacity-85");
+    bgShadowOnCaeli.classList.add("opacity-75");
+  } else {
+    bgWhitePers.classList.remove("translate-z-[-50px]");
+    bgWhitePers.classList.add("translate-z-[-200px]");
+    bgShadowOnCaeli.classList.remove("opacity-75");
+    bgShadowOnCaeli.classList.add("opacity-85");
+  }
+  if (st > vhSite * 4.75) {
+    bgShadowOnCaeli.classList.remove("opacity-75");
+    bgShadowOnCaeli.classList.add("opacity-35");
+  } else {
+    bgShadowOnCaeli.classList.remove("opacity-35");
+    bgShadowOnCaeli.classList.add("opacity-75");
+  }
+  if (st > vhSite * 5) {
+    bgShadowOnCaeli.classList.remove("opacity-35");
+    bgShadowOnCaeli.classList.add("opacity-5");
+    bgShadowOnCaeli.classList.add("hidden");
+    
+  } else {
+    bgShadowOnCaeli.classList.remove("opacity-5");
+    bgShadowOnCaeli.classList.add("opacity-35");
+    bgShadowOnCaeli.classList.remove("hidden");
+  }
+  // if (st > vhSite * 5.25) {
+  //   // text1
+  //   text1BgWhite.classList.remove("opacity-95");
+  //   text1BgWhite.classList.add("opacity-70");
+  //   // text2
+  //   text2BgWhite.classList.remove("opacity-95");
+  //   text2BgWhite.classList.add("opacity-70");
+  // } else {
+  //   // text1
+  //   text1BgWhite.classList.remove("opacity-70");
+  //   text1BgWhite.classList.add("opacity-95");
+  //   // text2
+  //   text2BgWhite.classList.remove("opacity-70");
+  //   text2BgWhite.classList.add("opacity-95");
+  // }
+  // if (st > vhSite * 5.5) {
+  //   // text1
+  //   text1BgWhite.classList.remove("opacity-70");
+  //   text1BgWhite.classList.add("opacity-40");
+  //   // text2
+  //   text2BgWhite.classList.remove("opacity-70");
+  //   text2BgWhite.classList.add("opacity-40");
+  // } else {
+  //   // text1
+  //   text1BgWhite.classList.remove("opacity-40");
+  //   text1BgWhite.classList.add("opacity-70");
+  //   // text2
+  //   text2BgWhite.classList.remove("opacity-40");
+  //   text1BgWhite.classList.add("opacity-70");
+  // }
+  // if (st > vhSite * 5.75) {
+  //   // text1
+  //   text1BgWhite.classList.remove("opacity-40");
+  //   text1BgWhite.classList.add("opacity-10");
+  //   // text2
+  //   text2BgWhite.classList.remove("opacity-40");
+  //   text2BgWhite.classList.add("opacity-10");
+  // } else {
+  //   // text1
+  //   text1BgWhite.classList.remove("opacity-10");
+  //   text1BgWhite.classList.add("opacity-40");
+  //   // text2
+  //   text2BgWhite.classList.remove("opacity-10");
+  //   text2BgWhite.classList.add("opacity-40");
+  // }
 });
