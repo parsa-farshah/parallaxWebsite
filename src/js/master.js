@@ -750,10 +750,24 @@ secScroll.addEventListener("scroll", () => {
   }
   if (st > vhSite * 15.5) {
     professionals.classList.remove("top-[-400%]");
-    professionals.classList.add("lg:top-[-410%]");
     professionals.classList.add("top-[-405%]");
   } else {
-    professionals.classList.remove("lg:top-[-410%]");
     professionals.classList.remove("top-[-405%]");
   }
+  if (st > vhSite * 15.75) {
+    footer.classList.remove("top-[0%]");
+    professionals.classList.remove("top-[-405%]");
+    professionals.classList.add("top-[-425%]");
+    footer.classList.add("top-[-68%]");
+  } else {
+    professionals.classList.remove("top-[-425%]");
+    footer.classList.remove("top-[-68%]");
+  }
+  // if (st > vhSite * 16) {
+  //   footer.classList.remove("top-[-60%]");
+  //   footer.classList.add("top-[-65%]");
+  //   footer.classList.add("smtop-[-65%]");
+  // } else {
+  //   footer.classList.remove("top-[-65%]");
+  // }
 });
