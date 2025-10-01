@@ -40,6 +40,11 @@ const professionals = document.querySelector("#professionals");
 const proImg = document.querySelector("#proImg");
 const ourImg = document.querySelector("#ourImg");
 const condImg = document.querySelector("#condImg");
+const bg3d = document.querySelector("#bg3d");
+const textBg3D = document.querySelector("#textBg3D");
+const mount = document.querySelector("#mount");
+const grass = document.querySelector("#grass");
+const footer = document.querySelector("#footer");
 secScroll.addEventListener("scroll", () => {
   let st = parseInt(secScroll.scrollTop);
   if (st > vhSite / 10) {
@@ -537,9 +542,6 @@ secScroll.addEventListener("scroll", () => {
     condImg.classList.add("translate-y-[-3%]");
   }
   if (st > vhSite * 12.5) {
-    // professionals.classList.remove("top-[-130%]");
-    // ourImg.classList.remove("translate-y-[-15%]");
-    // condImg.classList.remove("translate-y-[-5%]");
     professionals.classList.add("top-[-160%]");
     ourImg.classList.add("translate-y-[-17%]");
     condImg.classList.add("translate-y-[-7%]");
@@ -547,8 +549,180 @@ secScroll.addEventListener("scroll", () => {
     professionals.classList.remove("top-[-160%]");
     ourImg.classList.remove("translate-y-[-17%]");
     condImg.classList.remove("translate-y-[-7%]");
-    // professionals.classList.add("top-[-130%]");
     ourImg.classList.add("translate-y-[-15%]");
     condImg.classList.add("translate-y-[-5%]");
+  }
+  if (st > vhSite * 12.75) {
+    professionals.classList.remove("top-[-160%]");
+    ourImg.classList.remove("translate-y-[-17%]");
+    condImg.classList.remove("translate-y-[-7%]");
+    professionals.classList.add("top-[-190%]");
+    ourImg.classList.add("translate-y-[-19%]");
+    condImg.classList.add("translate-y-[-10%]");
+  } else {
+    professionals.classList.remove("top-[-190%]");
+    ourImg.classList.remove("translate-y-[-19%]");
+    condImg.classList.remove("translate-y-[-10%]");
+  }
+  if (st > vhSite * 13) {
+    professionals.classList.remove("top-[-190%]");
+    ourImg.classList.remove("translate-y-[-19%]");
+    condImg.classList.remove("translate-y-[-10%]");
+    professionals.classList.add("top-[-220%]");
+    ourImg.classList.add("translate-y-[-21%]");
+    condImg.classList.add("translate-y-[-12%]");
+  } else {
+    professionals.classList.remove("top-[-220%]");
+    ourImg.classList.remove("translate-y-[-21%]");
+    condImg.classList.remove("translate-y-[-12%]");
+  }
+  if (st > vhSite * 13.25) {
+    professionals.classList.remove("top-[-220%]");
+    ourImg.classList.remove("translate-y-[-21%]");
+    condImg.classList.remove("translate-y-[-12%]");
+    professionals.classList.add("top-[-250%]");
+    ourImg.classList.add("translate-y-[-23%]");
+    condImg.classList.add("translate-y-[-15%]");
+    bg3d.classList.remove("w-full");
+    bg3d.classList.add("w-[99%]");
+    textBg3D.classList.add("translate-y-[4%]");
+    mount.classList.add("translate-y-[-4%]");
+  } else {
+    professionals.classList.remove("top-[-250%]");
+    ourImg.classList.remove("translate-y-[-23%]");
+    condImg.classList.remove("translate-y-[-15%]");
+    bg3d.classList.remove("w-[99%]");
+    bg3d.classList.add("w-full");
+    textBg3D.classList.remove("translate-y-[4%]");
+    mount.classList.remove("translate-y-[-4%]");
+  }
+  if (st > vhSite * 13.5) {
+    professionals.classList.remove("top-[-250%]");
+    ourImg.classList.remove("translate-y-[-23%]");
+    condImg.classList.remove("translate-y-[-15%]");
+    professionals.classList.add("top-[-270%]");
+    ourImg.classList.add("translate-y-[-26%]");
+    condImg.classList.add("translate-y-[-17%]");
+    bg3d.classList.remove("w-[99%]");
+    bg3d.classList.add("w-[98%]");
+    textBg3D.classList.remove("translate-y-[4%]");
+    mount.classList.remove("translate-y-[-4%]");
+    textBg3D.classList.add("translate-y-[7%]");
+    mount.classList.add("translate-y-[-7%]");
+  } else {
+    professionals.classList.remove("top-[-270%]");
+    ourImg.classList.remove("translate-y-[-26%]");
+    condImg.classList.remove("translate-y-[-17%]");
+    bg3d.classList.remove("w-[98%]");
+    bg3d.classList.add("w-[99%]");
+    textBg3D.classList.remove("translate-y-[7%]");
+    mount.classList.remove("translate-y-[-7%]");
+  }
+  if (st > vhSite * 13.5) {
+    professionals.classList.remove("top-[-270%]");
+    bg3d.classList.remove("w-[98%]");
+    professionals.classList.add("top-[-290%]");
+    bg3d.classList.add("w-[96%]");
+    textBg3D.classList.remove("translate-y-[7%]");
+    mount.classList.remove("translate-y-[-7%]");
+    textBg3D.classList.add("translate-y-[9%]");
+    mount.classList.add("translate-y-[-9%]");
+    grass.classList.add("translate-y-[2%]");
+  } else {
+    professionals.classList.remove("top-[-290%]");
+    bg3d.classList.remove("w-[96%]");
+    textBg3D.classList.remove("translate-y-[9%]");
+    mount.classList.remove("translate-y-[-9%]");
+  }
+  if (st > vhSite * 13.5) {
+    professionals.classList.remove("top-[-290%]");
+    textBg3D.classList.remove("translate-y-[9%]");
+    mount.classList.remove("translate-y-[-9%]");
+    grass.classList.remove("translate-y-[2%]");
+    bg3d.classList.remove("w-[96%]");
+    professionals.classList.add("top-[-300%]");
+    bg3d.classList.add("w-[95.5%]");
+    textBg3D.classList.add("translate-y-[11%]");
+    mount.classList.add("translate-y-[-11%]");
+    grass.classList.add("translate-y-[4%]");
+  } else {
+    professionals.classList.remove("top-[-300%]");
+    bg3d.classList.remove("w-[95.5%]");
+    textBg3D.classList.remove("translate-y-[11%]");
+    mount.classList.remove("translate-y-[-11%]");
+    grass.classList.remove("translate-y-[4%]");
+  }
+  if (st > vhSite * 13.75) {
+    professionals.classList.remove("top-[-300%]");
+    textBg3D.classList.remove("translate-y-[11%]");
+    mount.classList.remove("translate-y-[-11%]");
+    grass.classList.remove("translate-y-[4%]");
+    professionals.classList.add("top-[-310%]");
+    textBg3D.classList.add("translate-y-[12%]");
+    mount.classList.add("translate-y-[-13%]");
+    grass.classList.add("translate-y-[8%]");
+  } else {
+    professionals.classList.remove("top-[-310%]");
+    textBg3D.classList.remove("translate-y-[12%]");
+    mount.classList.remove("translate-y-[-13%]");
+    grass.classList.remove("translate-y-[8%]");
+  }
+  if (st > vhSite * 14) {
+    professionals.classList.remove("top-[-310%]");
+    textBg3D.classList.remove("translate-y-[12%]");
+    mount.classList.remove("translate-y-[-13%]");
+    grass.classList.remove("translate-y-[8%]");
+
+    professionals.classList.add("top-[-320%]");
+    textBg3D.classList.add("translate-y-[14%]");
+    mount.classList.add("translate-y-[-15%]");
+    grass.classList.add("translate-y-[11%]");
+  } else {
+    professionals.classList.remove("top-[-320%]");
+    textBg3D.classList.remove("translate-y-[14%]");
+    mount.classList.remove("translate-y-[-15%]");
+    grass.classList.remove("translate-y-[11%]");
+  }
+  if (st > vhSite * 14.25) {
+    professionals.classList.remove("top-[-320%]");
+    textBg3D.classList.remove("translate-y-[14%]");
+    mount.classList.remove("translate-y-[-15%]");
+    grass.classList.remove("translate-y-[11%]");
+
+    professionals.classList.add("top-[-330%]");
+    textBg3D.classList.add("translate-y-[15%]");
+    mount.classList.add("translate-y-[-17%]");
+    grass.classList.add("translate-y-[14%]");
+  } else {
+    professionals.classList.remove("top-[-330%]");
+    textBg3D.classList.remove("translate-y-[15%]");
+    mount.classList.remove("translate-y-[-17%]");
+    grass.classList.remove("translate-y-[14%]");
+  }
+  if (st > vhSite * 14.5) {
+    professionals.classList.remove("top-[-330%]");
+    textBg3D.classList.remove("translate-y-[15%]");
+    mount.classList.remove("translate-y-[-17%]");
+    grass.classList.remove("translate-y-[14%]");
+
+    professionals.classList.add("top-[-350%]");
+    textBg3D.classList.add("translate-y-[15%]");
+    mount.classList.add("translate-y-[-19%]");
+    grass.classList.add("translate-y-[16%]");
+  } else {
+    professionals.classList.remove("top-[-350%]");
+    textBg3D.classList.remove("translate-y-[15%]");
+    mount.classList.remove("translate-y-[-19%]");
+    grass.classList.remove("translate-y-[16%]");
+  }
+  if (st > vhSite * 14.75) {
+    footer.classList.remove("translate-y-[-5%]");
+    professionals.classList.remove("top-[-370%]");
+    grass.classList.remove("translate-y-[16%]");
+    grass.classList.add("translate-y-[18%]");
+    footer.classList.add("translate-y-[-7%]");
+  } else {
+    grass.classList.remove("translate-y-[18%]");
+    footer.classList.remove("translate-y-[-7%]");
   }
 });
