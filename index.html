@@ -17,7 +17,7 @@
         <!-------------------------------------- navbar top -------------------------->
         <div
           id="navbar"
-          class="w-[93%] h-[66px] md:h-[50px] md:mt-4 mt-2 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-30 duration-500"
+          class="w-[93%] h-[66px] md:h-[50px] md:mt-4 mt-2 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-30 duration-500 pointer-events-none"
         >
           <!-- left side in md -->
           <div
@@ -34,12 +34,12 @@
                   alt=""
                 />
               </figure>
-              <span class="favText text-xl md:hidden">Menu</span>
+              <span class="favText text-xl md:hidden cursor-pointer pointer-events-auto">Menu</span>
             </div>
             <!-- middle side -->
             <div class="hidden lg:flex w-[55%] md:justify-between">
               <ul
-                class="group w-full favText flex justify-between *:favText *:xl:text-[16px] *:lg:text-[12px] *:text-[#053725]"
+                class="group w-full favText flex justify-between *:favText *:xl:text-[16px] *:lg:text-[12px] *:text-[#053725] cursor-pointer pointer-events-auto"
               >
                 <li
                   class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
@@ -71,7 +71,7 @@
             <!-- right side -->
             <div
               id="frBtn"
-              class="w-[20%] md:w-[10%] cursor-pointer h-full flex items-center justify-center gap-3 rounded-md bg-[#faf7f0] border border-[#dfdfdfd3] relative md:border-0"
+              class="w-[20%] md:w-[10%] cursor-pointer h-full flex items-center justify-center gap-3 rounded-md bg-[#faf7f0] border border-[#dfdfdfd3] relative md:border-0 pointer-events-auto cursor-pointer"
             >
               <span class="favText text-xl">En</span>
               <figure id="arrowBottom" class="w-[10px] h-[10px] duration-500">
@@ -91,7 +91,7 @@
           </div>
           <!----------------------------- right side in md --------------------->
           <div
-            class="w-full hidden md:flex h-full items-center bg-[#053725] justify-center gap-3 hover:border hover:border-[#dfdfdfd3] md:w-[14%] rounded-md hover:bg-[#faf7f0] duration-500 group/item cursor-pointer"
+            class="w-full hidden md:flex h-full items-center bg-[#053725] justify-center gap-3 hover:border hover:border-[#dfdfdfd3] md:w-[14%] rounded-md hover:bg-[#faf7f0] duration-500 group/item cursor-pointer pointer-events-auto"
           >
             <span
               class="favWhite flex text-[10px] lg:text-[16px] capitalize group-hover/item:text-[#053725]"
