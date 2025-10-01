@@ -716,32 +716,37 @@ secScroll.addEventListener("scroll", () => {
     grass.classList.remove("translate-y-[16%]");
   }
   if (st > vhSite * 14.75) {
-    footer.classList.remove("translate-y-[-10%]");
     professionals.classList.remove("top-[-350%]");
     grass.classList.remove("translate-y-[16%]");
     professionals.classList.add("top-[-370%]");
 
+    footer.classList.remove("top-[100%]");
+    footer.classList.add("top-[20%]");
     grass.classList.add("translate-y-[18%]");
-    footer.classList.add("translate-y-[-14%]");
   } else {
     professionals.classList.remove("top-[-370%]");
     grass.classList.remove("translate-y-[18%]");
-    footer.classList.remove("translate-y-[-14%]");
+    footer.classList.remove("top-[20%]");
+    footer.classList.add("top-[100%]");
   }
   if (st > vhSite * 15) {
-    footer.classList.remove("translate-y-[-10%]");
     professionals.classList.remove("top-[-370%]");
-    footer.classList.add("translate-y-[-12%]");
+
     professionals.classList.add("top-[-390%]");
+    footer.classList.remove("top-[20%]");
+    footer.classList.add("top-[10%]");
   } else {
-    footer.classList.remove("translate-y-[-12%]");
     professionals.classList.remove("top-[-390%]");
+    footer.classList.remove("top-[10%]");
   }
   if (st > vhSite * 15.25) {
     professionals.classList.remove("top-[-390%]");
     professionals.classList.add("top-[-400%]");
+    footer.classList.remove("top-[10%]");
+    footer.classList.add("top-[0%]");
   } else {
     professionals.classList.remove("top-[-400%]");
+    footer.classList.remove("top-[0%]");
   }
   if (st > vhSite * 15.5) {
     professionals.classList.remove("top-[-400%]");
@@ -754,8 +759,11 @@ secScroll.addEventListener("scroll", () => {
     professionals.classList.add("top-[-450%]");
     // secScroll.classList.remove("overflow-y-scroll");
     // secScroll.classList.add("overflow-y-hidden");
+    footer.classList.remove("top-[0%]");
+    footer.classList.add("top-[-20%]");
   } else {
     professionals.classList.remove("top-[-450%]");
     // secScroll.classList.remove("overflow-y-hidden");
+    footer.classList.remove("top-[-20%]");
   }
 });

@@ -219,6 +219,9 @@
   .top-16 {
     top: calc(var(--spacing) * 16);
   }
+  .top-\[-0\%\] {
+    top: -0%;
+  }
   .top-\[-10\%\] {
     top: -10%;
   }
@@ -318,6 +321,9 @@
   .top-\[0\%\] {
     top: 0%;
   }
+  .top-\[00\%\] {
+    top: 00%;
+  }
   .top-\[10\%\] {
     top: 10%;
   }
@@ -329,6 +335,9 @@
   }
   .top-\[40\%\] {
     top: 40%;
+  }
+  .top-\[50\%\] {
+    top: 50%;
   }
   .top-\[53\%\] {
     top: 53%;
@@ -348,8 +357,17 @@
   .top-\[70\%\] {
     top: 70%;
   }
+  .top-\[80\%\] {
+    top: 80%;
+  }
+  .top-\[80\] {
+    top: 80;
+  }
   .top-\[100\%\] {
     top: 100%;
+  }
+  .top-\[100\] {
+    top: 100;
   }
   .top-\[120\%\] {
     top: 120%;
@@ -359,6 +377,9 @@
   }
   .top-\[292px\] {
     top: 292px;
+  }
+  .top-full {
+    top: 100%;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -471,6 +492,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
   .mt-28 {
     margin-top: calc(var(--spacing) * 28);
   }
@@ -488,6 +512,9 @@
   }
   .mr-0 {
     margin-right: calc(var(--spacing) * 0);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
@@ -636,6 +663,9 @@
   }
   .h-\[1650vh\] {
     height: 1650vh;
+  }
+  .h-\[1670vh\] {
+    height: 1670vh;
   }
   .h-\[1700\] {
     height: 1700;
@@ -803,6 +833,18 @@
   }
   .-translate-y-10 {
     --tw-translate-y: calc(var(--spacing) * -10);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-0 {
+    --tw-translate-y: calc(var(--spacing) * 0);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * 1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-1\/2 {
+    --tw-translate-y: calc(1/2 * 100%);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-\[-3\%\] {
@@ -1168,6 +1210,18 @@
   }
   .py-64 {
     padding-block: calc(var(--spacing) * 64);
+  }
+  .pt-\[150px\] {
+    padding-top: 150px;
+  }
+  .pt-\[200px\] {
+    padding-top: 200px;
+  }
+  .pt-\[280px\] {
+    padding-top: 280px;
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
