@@ -4,10 +4,17 @@
   font-family: altformBold;
   src: url(../fonts/AltformTRIAL-Bold.otf);
 }
+@font-face {
+  font-family: altformLight;
+  src: url(../fonts/AltformTRIAL-Light.otf);
+}
 body {
   background-color: #faf7f0;
 }
 @layer utilities {
+  .altformLight{
+    font-family: altformLight;
+  }
   .altformBold {
     font-family: altformBold;
   }
