@@ -716,13 +716,49 @@ secScroll.addEventListener("scroll", () => {
     grass.classList.remove("translate-y-[16%]");
   }
   if (st > vhSite * 14.75) {
-    footer.classList.remove("translate-y-[-5%]");
-    professionals.classList.remove("top-[-370%]");
+    footer.classList.remove("translate-y-[-10%]");
+    professionals.classList.remove("top-[-350%]");
     grass.classList.remove("translate-y-[16%]");
+    professionals.classList.add("top-[-370%]");
+
     grass.classList.add("translate-y-[18%]");
-    footer.classList.add("translate-y-[-7%]");
+    footer.classList.add("translate-y-[-14%]");
   } else {
+    professionals.classList.remove("top-[-370%]");
     grass.classList.remove("translate-y-[18%]");
-    footer.classList.remove("translate-y-[-7%]");
+    footer.classList.remove("translate-y-[-14%]");
   }
+  if (st > vhSite * 15) {
+    footer.classList.remove("translate-y-[-10%]");
+    professionals.classList.remove("top-[-370%]");
+    footer.classList.add("translate-y-[-12%]");
+    professionals.classList.add("top-[-390%]");
+  } else {
+    footer.classList.remove("translate-y-[-12%]");
+    professionals.classList.remove("top-[-390%]");
+  }
+  if (st > vhSite * 15.25) {
+    professionals.classList.remove("top-[-390%]");
+    professionals.classList.add("top-[-400%]");
+  } else {
+    professionals.classList.remove("top-[-400%]");
+  }
+  if (st > vhSite * 15.5) {
+    professionals.classList.remove("top-[-400%]");
+    professionals.classList.add("top-[-410%]");
+  } else {
+    professionals.classList.remove("top-[-410%]");
+  }
+  if (st > vhSite * 15.75) {
+    professionals.classList.remove("top-[-410%]");
+    professionals.classList.add("top-[-420%]");
+  } else {
+    professionals.classList.remove("top-[-420%]");
+  }
+  // if (st > vhSite * 16) {
+  //   professionals.classList.remove("top-[-430%]");
+  //   professionals.classList.add("top-[-440%]");
+  // } else {
+  //   professionals.classList.remove("top-[-440%]");
+  // }
 });
