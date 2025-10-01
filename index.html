@@ -8,7 +8,7 @@
   </head>
   <body class="w-full overflow-y-hidden overflow-x-hidden">
     <main id="main" class="w-[103%] md:w-[101%] h-[100vh] overflow-y-scroll">
-      <section id="secScroll" class="w-[100%] h-[1700vh] relative">
+      <section id="secScroll" class="w-[100%] h-[1610vh] relative">
         <!-------------------------------------- navbar top -------------------------->
         <div
           id="navbar"
@@ -291,7 +291,7 @@
         <!------------------------------ Professionals -------------------------->
         <div
           id="professionals"
-          class="h-[100vh] my-20 fixed top-[100%] duration-500 pointer-events-none"
+          class="h-[100vh] my-20 fixed top-[100%] duration-500 pointer-events-none z-50"
         >
           <!----------------------------------- professional --------------------->
           <div class="flex flex-col sm:flex-row justify-between">
@@ -445,82 +445,78 @@
               <img class="w-full h-full" src="src/images/mouse3d.png" alt="" />
             </figure>
           </div>
-          <!---------------------------- footer ------------------------------------>
-          <div
-            id="footer"
-            class="w-full h-[180vh] bg-[#053725] translate-y-[-10%] duration-500 py-64"
-          >
-            <!-- first row -->
-            <div class="w-full flex flex-wrap justify-between">
-              <!-- left -->
-              <div
-                class="w-full text-center sm:text-start sm:w-1/2 h-full pl-10"
-              >
-                <span class="text-white altformBold text-4xl"
-                  >Cooler Footer</span
-                >
-              </div>
-              <!-- right -->
-              <div
-                class="w-full sm:w-1/2 px-10 mt-10 sm:mt-0 h-full flex justify-start gap-16 sm:gap-0 sm:justify-between sm:px-10 md:px-20"
-              >
-                <ul
-                  class="text-white flex flex-col gap-3 *:capitalize altformBold md:text-xl group pointer-events-auto cursor-pointer"
-                >
-                  <li
-                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                  >
-                    caell one
-                  </li>
-                  <li
-                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                  >
-                    Caeli Revolution
-                  </li>
-                  <li
-                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                  >
-                    Project Simulation
-                  </li>
-                  <li
-                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                  >
-                    Contact Us
-                  </li>
-                  <li
-                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                  >
-                    blog
-                  </li>
-                </ul>
-                <ul
-                  class="text-[#f9f7e7] altformLight mt-2 text-lg flex flex-col gap-1 *:capitalize group cursor-pointer pointer-events-auto"
-                >
-                  <li
-                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                  >
-                    Join Us
-                  </li>
-                  <li
-                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                  >
-                    QnA
-                  </li>
-                  <li
-                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                  >
-                    Professionals
-                  </li>
-                </ul>
-              </div>
+        </div>
+        <!---------------------------- footer ------------------------------------>
+        <div
+          id="footer"
+          class="w-full bg-[#053725] fixed top-[100%] left-0 duration-500 pointer-events-none z-40 pt-[150px] mb-5"
+        >
+          <!-- first row -->
+          <div class="w-full flex flex-wrap justify-between">
+            <!-- left -->
+            <div class="w-full text-center sm:text-start sm:w-1/2 h-full pl-10">
+              <span class="text-white altformBold text-4xl">Cooler Footer</span>
             </div>
-            <!-- logo -->
-            <figure
-              class="w-[95%] flex ml-[3%] justify-center mt-28 md:mt-[40px] pb-16"
+            <!-- right -->
+            <div
+              class="w-full sm:w-1/2 px-10 mt-10 sm:mt-0 h-full flex justify-start gap-16 sm:gap-0 sm:justify-between sm:px-10 md:px-20"
             >
-              <img src="src/images/footelogo.svg" alt="" />
-            </figure>
+              <ul
+                class="text-white flex flex-col gap-3 *:capitalize altformBold md:text-xl group pointer-events-auto cursor-pointer"
+              >
+                <li
+                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                >
+                  caell one
+                </li>
+                <li
+                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                >
+                  Caeli Revolution
+                </li>
+                <li
+                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                >
+                  Project Simulation
+                </li>
+                <li
+                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                >
+                  Contact Us
+                </li>
+                <li
+                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                >
+                  blog
+                </li>
+              </ul>
+              <ul
+                class="text-[#f9f7e7] altformLight mt-2 text-lg flex flex-col gap-1 *:capitalize group cursor-pointer pointer-events-auto"
+              >
+                <li
+                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                >
+                  Join Us
+                </li>
+                <li
+                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                >
+                  QnA
+                </li>
+                <li
+                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                >
+                  Professionals
+                </li>
+              </ul>
+            </div>
           </div>
+          <!-- logo -->
+          <figure
+            class="w-[95%] flex ml-[3%] justify-center mt-16 md:mt-[40px] pb-16"
+          >
+            <img src="src/images/footelogo.svg" alt="" />
+          </figure>
         </div>
       </section>
     </main>
