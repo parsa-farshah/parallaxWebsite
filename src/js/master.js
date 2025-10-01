@@ -303,7 +303,7 @@ secScroll.addEventListener("scroll", () => {
     _plantImg.classList.remove("left-[-40px]");
     _plantImg.classList.remove("bottom-[40px]");
     // images back add
-    _shelfImg.classList.add("left-[125%]");
+    _shelfImg.classList.add("left-[150%]");
     _consoleImg.classList.add("top-[100%]");
     _plantImg.classList.add("left-[-20%]");
     _plantImg.classList.add("top-[100%]");
@@ -315,12 +315,12 @@ secScroll.addEventListener("scroll", () => {
     text2BgWhite.classList.add("block");
     afterTextSec.classList.add("md:hidden");
     // images back remove
-    _shelfImg.classList.remove("left-[125%]");
+    // _shelfImg.classList.remove("left-[150%]");
     // _consoleImg.classList.remove("top-[100%]");
     _plantImg.classList.remove("left-[-20%]");
     _plantImg.classList.remove("top-[100%]");
     // images back add
-    _shelfImg.classList.add("left-[105%]");
+    // _shelfImg.classList.add("left-[105%]");
     // _consoleImg.classList.add("top-[65%]");
     _plantImg.classList.add("left-[-40px]");
     _plantImg.classList.add("bottom-[40px]");
@@ -340,13 +340,13 @@ secScroll.addEventListener("scroll", () => {
   }
   if (st > vhSite * 7.5) {
     mouseDiv.classList.remove("translate-y-[-80%]");
-    mouseDiv.classList.add("translate-y-[-160%]");
+    mouseDiv.classList.add("translate-y-[-220%]");
     bgWhite.classList.remove("top-[10%]");
     bgWhite.classList.add("top-[-60%]");
     ourMision.classList.remove("top-[60%]");
     ourMision.classList.add("top-[0%]");
   } else {
-    mouseDiv.classList.remove("translate-y-[-160%]");
+    mouseDiv.classList.remove("translate-y-[-220%]");
     bgWhite.classList.remove("top-[-60%]");
     // bgWhite.classList.add("top-[10%]");
     ourMision.classList.remove("top-[0%]");
@@ -755,10 +755,4 @@ secScroll.addEventListener("scroll", () => {
   } else {
     professionals.classList.remove("top-[-420%]");
   }
-  // if (st > vhSite * 16) {
-  //   professionals.classList.remove("top-[-430%]");
-  //   professionals.classList.add("top-[-440%]");
-  // } else {
-  //   professionals.classList.remove("top-[-440%]");
-  // }
 });
