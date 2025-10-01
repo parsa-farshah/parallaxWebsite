@@ -268,6 +268,9 @@
   .top-\[-65\%\] {
     top: -65%;
   }
+  .top-\[-66\%\] {
+    top: -66%;
+  }
   .top-\[-68\%\] {
     top: -68%;
   }
@@ -1350,6 +1353,9 @@
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);

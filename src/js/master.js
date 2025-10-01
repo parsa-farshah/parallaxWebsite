@@ -758,10 +758,10 @@ secScroll.addEventListener("scroll", () => {
     footer.classList.remove("top-[0%]");
     professionals.classList.remove("top-[-405%]");
     professionals.classList.add("top-[-425%]");
-    footer.classList.add("top-[-64%]");
+    footer.classList.add("top-[-68%]");
   } else {
     professionals.classList.remove("top-[-425%]");
-    footer.classList.remove("top-[-64%]");
+    footer.classList.remove("top-[-68%]");
   }
   // if (st > vhSite * 16) {
   //   footer.classList.remove("top-[-60%]");
