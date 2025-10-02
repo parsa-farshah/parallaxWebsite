@@ -1211,6 +1211,9 @@
   .pt-\[150px\] {
     padding-top: 150px;
   }
+  .pr-\[1\.5\%\] {
+    padding-right: 1.5%;
+  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
@@ -1219,6 +1222,12 @@
   }
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
+  }
+  .pl-\[1\.5\%\] {
+    padding-left: 1.5%;
+  }
+  .pl-\[1\.5\] {
+    padding-left: 1.5;
   }
   .text-center {
     text-align: center;
@@ -1769,6 +1778,21 @@
   .md\:pt-\[150px\] {
     @media (width >= 48rem) {
       padding-top: 150px;
+    }
+  }
+  .md\:pr-\[0\.25\%\] {
+    @media (width >= 48rem) {
+      padding-right: 0.25%;
+    }
+  }
+  .md\:pr-\[0\.25\] {
+    @media (width >= 48rem) {
+      padding-right: 0.25;
+    }
+  }
+  .md\:pr-\[0\] {
+    @media (width >= 48rem) {
+      padding-right: 0;
     }
   }
   .md\:text-8xl {
