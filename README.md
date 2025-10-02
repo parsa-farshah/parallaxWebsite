@@ -39,6 +39,11 @@ Inspired by award-winning websites on [Awwwards](https://www.awwwards.com/) (ref
 ## 👨‍💻 Developed By | توسعه‌دهنده  
 **Parsa Dehghan Pour Farashah**
 
+## 🔧 Project Mentor | مربی پروژه  
+[@parsa_ghorbanian_web](https://www.instagram.com/parsa_ghorbanian_web)
+
+---
+
 ---
 
 ## 📲 Connect with Me | ارتباط با من  
