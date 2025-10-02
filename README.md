@@ -54,13 +54,13 @@ Inspired by award-winning websites on [Awwwards](https://www.awwwards.com/) (ref
 ## 📸 Screenshots | پیش‌نمایش پروژه  
 
 ### 🌟 Overview | نمای کلی  
-<img src="assets/screenshots/cover.png" alt="Project Overview" width="100%">
+<img src="src/images/cover.jpg" alt="Project Overview" width="100%">
 
 ### 💻 Desktop View | نمای دسکتاپ  
-<img src="assets/screenshots/desktop.png" alt="Desktop View" width="100%">
+<img src="src/images/1.jpg" alt="Desktop View" width="100%">
 
 ### 📱 Tablet View | نمای تبلت  
-<img src="assets/screenshots/tablet.png" alt="Tablet View" width="60%">
+<img src="src/images/2.jpg" alt="Tablet View" width="60%">
 
 ### 📱 Mobile View | نمای موبایل  
-<img src="assets/screenshots/mobile.png" alt="Mobile View" width="45%">
+<img src="src/images/3.jpg" alt="Mobile View" width="45%">
