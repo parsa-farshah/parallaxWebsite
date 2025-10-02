@@ -17,7 +17,7 @@
         <!-------------------------------------- navbar top -------------------------->
         <div
           id="navbar"
-          class="w-[93%] h-[66px] md:h-[50px] md:mt-4 mt-2 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-30 duration-500 pointer-events-none"
+          class="w-[93%] h-[66px] md:h-[50px] md:mt-4 mt-2 flex items-center justify-between fixed top-0 leftCenter -translate-x-1/2 z-30 duration-500 pointer-events-none"
         >
           <!-- left side in md -->
           <div
@@ -34,7 +34,10 @@
                   alt=""
                 />
               </figure>
-              <span class="favText text-xl md:hidden cursor-pointer pointer-events-auto">Menu</span>
+              <span
+                class="favText text-xl md:hidden cursor-pointer pointer-events-auto"
+                >Menu</span
+              >
             </div>
             <!-- middle side -->
             <div class="hidden lg:flex w-[55%] md:justify-between">
@@ -206,7 +209,7 @@
         >
           <img src="src/images/shelf.webp" alt="" />
         </figure>
-        <!-- bg white line right -->
+        <!-------------------------- bg white line right -------------------------->
         <figure
           id="lineWhiteLeft"
           class="w-full h-fit fixed hidden pointer-events-none right-0 top-[55%] -translate-y-1/2 translate-x-1/2 z-10"
@@ -236,7 +239,7 @@
             >
             <span
               id="text2BgWhite"
-              class="favTextLighter mt-5 w-[90%] sm:w-[60%] text-center leading-40 sm:leading-60 text-[120px] sm:text-[240px] uppercase hidden duration-300"
+              class="favTextLighter mt-5 w-[90%] sm:w-[60%] text-center leading-40 sm:leading-60 text-[100px] sm:text-[120px] md:text-[240px] uppercase hidden duration-300"
               >Caeli On</span
             >
             <!----------------- add new bg section after hide text ----------------->
@@ -296,7 +299,7 @@
         <!------------------------------ Professionals -------------------------->
         <div
           id="professionals"
-          class="h-[100vh] my-20 fixed top-[100%] duration-500 pointer-events-none z-50"
+          class="my-20 fixed top-[100%] left-[-1.5%] duration-500 pointer-events-none z-50"
         >
           <!----------------------------------- professional --------------------->
           <div class="flex flex-col sm:flex-row justify-between">
@@ -336,7 +339,7 @@
           >
             <!-- left side -->
             <figure
-              class="w-[95%] sm:w-[60%] sm:h-[300px] lg:w-[60%] md:h-fit ml-[1.7%] mt-10 sm:mt-0 sm:mx-0 mr-0 sm:mr-5 rounded-2xl overflow-hidden"
+              class="w-[95%] sm:w-[60%] sm:h-[300px] lg:w-[60%] md:h-fit mt-10 sm:mt-0 sm:mx-0 rounded-2xl overflow-hidden mr-[1.5%]"
             >
               <img
                 id="ourImg"
@@ -396,7 +399,7 @@
             <!-- right side -->
 
             <figure
-              class="w-[95%] sm:w-[60%] sm:h-[300px] lg:w-[60%] md:h-fit ml-[1.7%] mt-10 sm:mt-0 sm:mx-0 mr-0 sm:mr-5 rounded-2xl overflow-hidden"
+              class="w-[95%] sm:w-[60%] sm:h-[300px] lg:w-[60%] md:h-fit mt-10 sm:mt-0 sm:mx-0 mr-[1.5%] sm:mr-5 rounded-2xl overflow-hidden"
             >
               <img
                 id="condImg"
@@ -406,10 +409,14 @@
               />
             </figure>
           </div>
-          <!--------------------------- image 3d Enter the the new era ------------>
+        </div>
+        <!--------------------------- image 3d Enter the the new era ------------>
+        <div
+          id="bg3d"
+          class="w-full h-[120vh] fixed overflow-hidden duration-700 pointer-events-none left-[0.5%] top-[100%]"
+        >
           <div
-            id="bg3d"
-            class="w-full h-[120vh] relative mt-[200px] rounded-md overflow-hidden duration-700 mx-auto pointer-events-none"
+            class="w-full h-[120vh] mt-[200px] rounded-md overflow-hidden duration-700 mx-auto pointer-events-none"
           >
             <figure
               id="mount"
@@ -454,7 +461,7 @@
         <!---------------------------- footer ------------------------------------>
         <div
           id="footer"
-          class="w-full bg-[#053725] fixed top-[100%] left-0 duration-500 pointer-events-none z-40 pt-[150px] mb-5"
+          class="w-full h-[180vh] bg-[#053725] fixed top-[100%] left-[-1.5%] md:left-[-0.25%] duration-500 pointer-events-none z-40 pt-[150px] mb-5"
         >
           <!-- first row -->
           <div class="w-full flex flex-wrap justify-between">
@@ -517,10 +524,8 @@
             </div>
           </div>
           <!-- logo -->
-          <figure
-            class="w-[95%] flex ml-[3%] justify-center mt-16 md:mt-[20px] pb-16"
-          >
-            <img src="src/images/footelogo.svg" alt="" />
+          <figure class="w-full flex justify-center mt-16 md:mt-[20px] pb-16">
+            <img class="w-[95%]" src="src/images/footelogo.svg" alt="" />
           </figure>
           <!-- my footer -->
           <div
