@@ -12,7 +12,7 @@ body {
   background-color: #faf7f0;
 }
 @layer utilities {
-  .altformLight{
+  .altformLight {
     font-family: altformLight;
   }
   .altformBold {
@@ -45,5 +45,8 @@ body {
       rgba(0, 46, 29, 1) 38%,
       rgba(0, 46, 29, 0) 100%
     );
+  }
+  .leftCenter {
+    left: calc(50% - 1%);
   }
 }
