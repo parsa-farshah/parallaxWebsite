@@ -12,7 +12,10 @@
     />
   </head>
   <body class="w-full overflow-hidden">
-    <main id="main" class="w-[103%] md:w-[101%] h-[100vh] overflow-y-scroll ">
+    <main
+      id="main"
+      class="w-[103%] md:w-[101%] h-[100vh] overflow-y-scroll overflow-x-hidden"
+    >
       <section id="secScroll" class="w-[100%] h-[1700vh] relative">
         <!-------------------------------------- navbar top -------------------------->
         <div
@@ -461,113 +464,119 @@
         <!---------------------------- footer ------------------------------------>
         <div
           id="footer"
-          class="w-full h-[180vh] bg-[#053725] fixed top-[100%] left-[-1.5%] md:left-[-0.25%] duration-500 pointer-events-none z-40 pt-[150px] mb-5"
+          class="w-full bg-[#053725] h-[180vh] fixed top-[100%] md:left-[-0.25%] duration-500 pointer-events-none z-40 pt-[150px] mb-5"
         >
-          <!-- first row -->
-          <div class="w-full flex flex-wrap justify-between">
-            <!-- left -->
-            <div class="w-full text-center sm:text-start sm:w-1/2 h-full pl-10">
-              <span class="text-white altformBold text-4xl">Cooler Footer</span>
+          <div class="w-full h-full pr-[1.5%] md:pr-[0.25%]">
+            <!-- first row -->
+            <div class="w-full flex flex-wrap justify-between">
+              <!-- left -->
+              <div
+                class="w-full text-center sm:text-start sm:w-1/2 h-full pl-10"
+              >
+                <span class="text-white altformBold text-4xl"
+                  >Cooler Footer</span
+                >
+              </div>
+              <!-- right -->
+              <div
+                class="w-full sm:w-1/2 px-10 mt-10 sm:mt-0 h-full flex justify-start gap-16 sm:gap-0 sm:justify-between sm:px-10 md:px-20"
+              >
+                <ul
+                  class="text-white flex flex-col gap-3 *:capitalize altformBold md:text-xl group pointer-events-auto cursor-pointer"
+                >
+                  <li
+                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                  >
+                    caell one
+                  </li>
+                  <li
+                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                  >
+                    Caeli Revolution
+                  </li>
+                  <li
+                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                  >
+                    Project Simulation
+                  </li>
+                  <li
+                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                  >
+                    Contact Us
+                  </li>
+                  <li
+                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                  >
+                    blog
+                  </li>
+                </ul>
+                <ul
+                  class="text-[#f9f7e7] altformLight mt-2 text-lg flex flex-col gap-1 *:capitalize group cursor-pointer pointer-events-auto"
+                >
+                  <li
+                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                  >
+                    Join Us
+                  </li>
+                  <li
+                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                  >
+                    QnA
+                  </li>
+                  <li
+                    class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                  >
+                    Professionals
+                  </li>
+                </ul>
+              </div>
             </div>
-            <!-- right -->
+            <!-- logo -->
+            <figure class="w-full flex justify-center mt-16 md:mt-[20px] pb-16">
+              <img class="w-[95%]" src="src/images/footelogo.svg" alt="" />
+            </figure>
+            <!-- my footer -->
             <div
-              class="w-full sm:w-1/2 px-10 mt-10 sm:mt-0 h-full flex justify-start gap-16 sm:gap-0 sm:justify-between sm:px-10 md:px-20"
+              class="w-full flex justify-center top-20 rounded-md overflow-hidden pointer-events-none mb-5 pb-10"
             >
-              <ul
-                class="text-white flex flex-col gap-3 *:capitalize altformBold md:text-xl group pointer-events-auto cursor-pointer"
+              <div
+                class="w-[300px] h-[400px] border-2 border-[#009b62] rounded-2xl overflow-hidden"
               >
-                <li
-                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                <figure class="w-full h-[65%]">
+                  <img
+                    class="w-full h-full object-cover object-top rounded-2xl"
+                    src="src/images/parsa3.jpg"
+                    alt=""
+                  />
+                </figure>
+                <span
+                  class="text-2xl altformBold text-[#009b62] capitalize flex justify-center mt-4"
+                  >parsa dehghan pour</span
                 >
-                  caell one
-                </li>
-                <li
-                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
+                <span
+                  class="text-sm altformBold text-white capitalize flex justify-center mt-1"
+                  >front end developer</span
                 >
-                  Caeli Revolution
-                </li>
-                <li
-                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                >
-                  Project Simulation
-                </li>
-                <li
-                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                >
-                  Contact Us
-                </li>
-                <li
-                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                >
-                  blog
-                </li>
-              </ul>
-              <ul
-                class="text-[#f9f7e7] altformLight mt-2 text-lg flex flex-col gap-1 *:capitalize group cursor-pointer pointer-events-auto"
-              >
-                <li
-                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                >
-                  Join Us
-                </li>
-                <li
-                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                >
-                  QnA
-                </li>
-                <li
-                  class="opacity-100 group-hover:opacity-40 hover:!opacity-100 duration-300"
-                >
-                  Professionals
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- logo -->
-          <figure class="w-full flex justify-center mt-16 md:mt-[20px] pb-16">
-            <img class="w-[95%]" src="src/images/footelogo.svg" alt="" />
-          </figure>
-          <!-- my footer -->
-          <div
-            class="w-full flex justify-center top-20 rounded-md overflow-hidden pointer-events-none mb-5 pb-10"
-          >
-            <div
-              class="w-[300px] h-[400px] border-2 border-[#009b62] rounded-2xl overflow-hidden"
-            >
-              <figure class="w-full h-[65%]">
-                <img
-                  class="w-full h-full object-cover object-top rounded-2xl"
-                  src="src/images/parsa3.jpg"
-                  alt=""
-                />
-              </figure>
-              <span
-                class="text-2xl altformBold text-[#009b62] capitalize flex justify-center mt-4"
-                >parsa dehghan pour</span
-              >
-              <span
-                class="text-sm altformBold text-white capitalize flex justify-center mt-1"
-                >front end developer</span
-              >
-              <div class="flex justify-around px-2 mt-2">
-                <a
-                  class="w-[60px] h-[60px] hover:scale-110 duration-300 pointer-events-auto"
-                  href="http://github.com/parsa-farshah"
-                >
-                  <img src="src/images/github.png" alt="" />
-                </a>
-                <a
-                  class="w-[60px] h-[60px] hover:scale-110 duration-300 pointer-events-auto"
-                  href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
-                >
-                  <img src="src/images/instagram.png" alt="" />
-                </a>
-                <a
-                  class="w-[60px] h-[60px] hover:scale-110 duration-300 pointer-events-auto"
-                  href="http://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250"
-                >
-                  <img src="src/images/linkedin.png" alt="" />
-                </a>
+                <div class="flex justify-around px-2 mt-2">
+                  <a
+                    class="w-[60px] h-[60px] hover:scale-110 duration-300 pointer-events-auto"
+                    href="http://github.com/parsa-farshah"
+                  >
+                    <img src="src/images/github.png" alt="" />
+                  </a>
+                  <a
+                    class="w-[60px] h-[60px] hover:scale-110 duration-300 pointer-events-auto"
+                    href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
+                  >
+                    <img src="src/images/instagram.png" alt="" />
+                  </a>
+                  <a
+                    class="w-[60px] h-[60px] hover:scale-110 duration-300 pointer-events-auto"
+                    href="http://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250"
+                  >
+                    <img src="src/images/linkedin.png" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
